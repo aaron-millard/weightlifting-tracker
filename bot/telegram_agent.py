@@ -614,6 +614,25 @@ SEEN_UPDATES = set()
 
 class BotHTTPHandler(BaseHTTPRequestHandler):
     def do_GET(self):
+        if self.path.startswith("/lifting-data.json"):
+            w_data = load_workout_data()
+            body = json.dumps(w_data, indent=2).encode("utf-8")
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Cache-Control", "no-store")
+            self.end_headers()
+            self.wfile.write(body)
+            return
+        if self.path.startswith("/lifting") or self.path == "/":
+            dash_path = resolve_path("dashboard.html")
+            if os.path.exists(dash_path):
+                with open(dash_path, "rb") as f:
+                    body = f.read()
+                self.send_response(200)
+                self.send_header("Content-Type", "text/html; charset=utf-8")
+                self.end_headers()
+                self.wfile.write(body)
+                return
         self.send_response(200)
         self.end_headers()
         self.wfile.write(b"OK - Weightlifting Tracker Telegram Agent is awake")

@@ -4,7 +4,11 @@ Last Updated: 2026-11-08
 
 ## 1. Overview & Purpose
 - Personal weightlifting tracker and gym assistant for Aaron Millard.
-- Tracks 4-month progression starting from July 7, 2026 baseline (`2026-07-07`) across a 4-day Push / Pull / Legs / Rest+Abs split.
+- Tracks progression across two baseline views:
+  1. Starting July 7, 2026 (`2026-07-07`): Initial gym start date (4-month historical progression).
+  2. Starting November 8, 2026 (`2026-11-08`): Official live tracking start date.
+- Bodyweight Progression: Started at 175 lbs (July 7, 2026) -> got up to 187 lbs peak -> currently at 183 lbs (Nov 8, 2026).
+- Live 24/7 Cloud Dashboard: `https://macrodave.onrender.com/lifting` (with live JSON data endpoint `https://macrodave.onrender.com/lifting-data.json`) so the dashboard is always accessible even when the PC is closed, and automatically reflects any workouts logged via `@WeightliftingTracker_Bot`.
 - Follows the exact same architecture, communication rules (ultra-short, zero fluff, no markdown asterisks), `Okay.` Idea-Dump Mode, and 24/7 Render multi-bot hosting methodology as `diet-macro-assistant` and `hunting-wabbits`.
 
 ## 2. Key Progression Highlights (July 2026 Baseline -> Nov 2026 Current)

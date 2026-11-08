@@ -40,7 +40,7 @@
     }
 
     .container {
-      max-width: 1200px;
+      max-width: 1220px;
       margin: 0 auto;
     }
 
@@ -51,9 +51,9 @@
       justify-content: space-between;
       align-items: center;
       gap: 16px;
-      padding-bottom: 24px;
+      padding-bottom: 22px;
       border-bottom: 1px solid var(--border);
-      margin-bottom: 28px;
+      margin-bottom: 24px;
     }
 
     .title-group h1 {
@@ -71,19 +71,52 @@
       margin-top: 4px;
     }
 
-    .status-badges {
+    .header-controls {
       display: flex;
-      gap: 10px;
       flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+    }
+
+    /* Baseline Toggle Switch */
+    .mode-switch {
+      display: inline-flex;
+      background: #0d1322;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 4px;
+      gap: 4px;
+    }
+
+    .mode-btn {
+      background: transparent;
+      color: var(--muted);
+      border: none;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 0.84rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .mode-btn:hover {
+      color: var(--text);
+    }
+
+    .mode-btn.active {
+      background: var(--accent);
+      color: #08111f;
+      box-shadow: 0 2px 10px rgba(56, 189, 248, 0.35);
     }
 
     .badge {
       display: inline-flex;
       align-items: center;
       gap: 7px;
-      padding: 6px 13px;
+      padding: 7px 13px;
       border-radius: 999px;
-      font-size: 0.82rem;
+      font-size: 0.8rem;
       font-weight: 600;
       border: 1px solid var(--border);
       background: var(--surface);
@@ -103,12 +136,83 @@
       box-shadow: 0 0 8px var(--green);
     }
 
+    /* Bodyweight Banner */
+    .bw-banner {
+      background: linear-gradient(135deg, rgba(19, 27, 46, 0.95), rgba(24, 36, 62, 0.9));
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--amber);
+      border-radius: 14px;
+      padding: 18px 22px;
+      margin-bottom: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .bw-title {
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--amber);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .bw-summary {
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .bw-steps {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .bw-step {
+      background: rgba(11, 15, 23, 0.65);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 8px 14px;
+      text-align: center;
+      min-width: 118px;
+    }
+
+    .bw-step.highlight {
+      border-color: var(--accent);
+      background: var(--accent-glow);
+    }
+
+    .bw-step span {
+      display: block;
+      font-size: 0.72rem;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    .bw-step strong {
+      font-size: 1.18rem;
+      color: var(--text);
+    }
+
+    .bw-step small {
+      display: block;
+      font-size: 0.72rem;
+      margin-top: 2px;
+      color: var(--green);
+      font-weight: 600;
+    }
+
     /* Summary KPI Row */
     .kpi-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 16px;
-      margin-bottom: 30px;
+      margin-bottom: 28px;
     }
 
     .kpi-card {
@@ -126,14 +230,14 @@
 
     .kpi-label {
       color: var(--muted);
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       text-transform: uppercase;
       letter-spacing: 0.06em;
       font-weight: 600;
     }
 
     .kpi-value {
-      font-size: 1.75rem;
+      font-size: 1.7rem;
       font-weight: 800;
       margin: 6px 0 2px;
       color: var(--text);
@@ -188,12 +292,20 @@
 
     /* Section Headers */
     .section-title {
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       font-weight: 700;
       margin-bottom: 16px;
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
+      gap: 10px;
+    }
+
+    .section-subtitle {
+      font-size: 0.88rem;
+      color: var(--muted);
+      font-weight: 500;
     }
 
     /* Progression Cards Grid */
@@ -222,12 +334,12 @@
 
     .exercise-name {
       font-weight: 700;
-      font-size: 1.05rem;
+      font-size: 1.03rem;
     }
 
     .assisted-tag {
       display: inline-block;
-      font-size: 0.7rem;
+      font-size: 0.68rem;
       font-weight: 700;
       padding: 2px 8px;
       border-radius: 6px;
@@ -241,10 +353,15 @@
       background: var(--green-bg);
       color: var(--green);
       font-weight: 700;
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       padding: 4px 10px;
       border-radius: 8px;
       white-space: nowrap;
+    }
+
+    .gain-pill.baseline {
+      background: rgba(56, 189, 248, 0.14);
+      color: var(--accent);
     }
 
     .stats-compare {
@@ -265,7 +382,7 @@
     }
 
     .stat-box strong {
-      font-size: 1.1rem;
+      font-size: 1.06rem;
       color: var(--text);
     }
 
@@ -290,6 +407,7 @@
       height: 100%;
       background: linear-gradient(90deg, var(--accent), var(--green));
       border-radius: 999px;
+      transition: width 0.3s ease;
     }
 
     .routine-meta {
@@ -314,7 +432,7 @@
     .day-header {
       padding: 16px 20px;
       font-weight: 700;
-      font-size: 1.1rem;
+      font-size: 1.06rem;
       border-bottom: 1px solid var(--border);
       display: flex;
       justify-content: space-between;
@@ -338,7 +456,7 @@
       justify-content: space-between;
       align-items: center;
       gap: 12px;
-      font-size: 0.93rem;
+      font-size: 0.92rem;
     }
 
     .exercise-list li:last-child {
@@ -402,7 +520,7 @@
     }
 
     .pin-box strong {
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       color: var(--amber);
     }
 
@@ -417,7 +535,7 @@
       border: 1px solid var(--border);
       padding: 7px 12px;
       border-radius: 8px;
-      font-size: 0.86rem;
+      font-size: 0.85rem;
       color: var(--text);
     }
 
@@ -433,50 +551,81 @@
     <header class="header">
       <div class="title-group">
         <h1>Weightlifting Tracker</h1>
-        <p>Baseline: July 7, 2026 &rarr; Current: November 8, 2026 (4-Month Progression)</p>
+        <p id="header-subtitle">Comparing: Starting July 7, 2026 &rarr; Current (4-Month Progression)</p>
       </div>
-      <div class="status-badges">
-        <div class="badge live"><span class="dot"></span> @WeightliftingTracker_Bot Live 24/7</div>
-        <div class="badge">Split: Push / Pull / Legs / Rest+Abs</div>
+      <div class="header-controls">
+        <div class="mode-switch" role="group" aria-label="Baseline Start Date">
+          <button class="mode-btn active" id="btn-july" onclick="setBaselineMode('july')">Starting July 7</button>
+          <button class="mode-btn" id="btn-nov" onclick="setBaselineMode('nov')">Starting Nov 8 (Tracked)</button>
+        </div>
+        <div class="badge live"><span class="dot"></span> 24/7 Cloud Live</div>
       </div>
     </header>
+
+    <!-- Bodyweight Trajectory Banner -->
+    <section class="bw-banner">
+      <div>
+        <div class="bw-title">Bodyweight Trajectory</div>
+        <div class="bw-summary" id="bw-summary-text">Started at 175 lbs (July 7) &rarr; Peaked at 187 lbs (+12 lbs bulk) &rarr; Now at 183 lbs (-4 lbs cut, +8 lbs net)</div>
+      </div>
+      <div class="bw-steps">
+        <div class="bw-step" id="bw-step-july">
+          <span>July 7 Start</span>
+          <strong>175 lbs</strong>
+          <small style="color: var(--muted);">Baseline</small>
+        </div>
+        <div class="arrow">&rarr;</div>
+        <div class="bw-step">
+          <span>Peak Weight</span>
+          <strong>187 lbs</strong>
+          <small style="color: var(--amber);">+12 lbs</small>
+        </div>
+        <div class="arrow">&rarr;</div>
+        <div class="bw-step highlight" id="bw-step-curr">
+          <span>Nov 8 / Current</span>
+          <strong id="bw-curr-val">183 lbs</strong>
+          <small id="bw-curr-delta">-4 lbs from peak</small>
+        </div>
+      </div>
+    </section>
 
     <!-- KPI Summary Row -->
     <section class="kpi-grid">
       <div class="kpi-card">
+        <div class="kpi-label">Bodyweight</div>
+        <div class="kpi-value" id="kpi-bw-val">183 lbs</div>
+        <div class="kpi-sub" id="kpi-bw-sub">175 start &rarr; 187 peak &rarr; 183 now</div>
+      </div>
+      <div class="kpi-card">
         <div class="kpi-label">Push-Up Max</div>
-        <div class="kpi-value">25 reps</div>
-        <div class="kpi-sub">+16.5 reps vs July (7-10)</div>
+        <div class="kpi-value" id="kpi-pushup-val">25 reps</div>
+        <div class="kpi-sub" id="kpi-pushup-sub">+16.5 reps vs July 7 (7-10)</div>
       </div>
       <div class="kpi-card">
         <div class="kpi-label">Leg Press Working Weight</div>
-        <div class="kpi-value">200 lbs</div>
-        <div class="kpi-sub">+50 lbs vs July (150 lbs)</div>
+        <div class="kpi-value" id="kpi-legpress-val">200 lbs</div>
+        <div class="kpi-sub" id="kpi-legpress-sub">+50 lbs vs July 7 (150 lbs)</div>
       </div>
       <div class="kpi-card">
         <div class="kpi-label">Assisted Dips &amp; Pull-Ups</div>
-        <div class="kpi-value">+25 lbs</div>
-        <div class="kpi-sub">Real Strength Gained Each</div>
-      </div>
-      <div class="kpi-card">
-        <div class="kpi-label">Dumbbell Bench Press</div>
-        <div class="kpi-value">55 lbs</div>
-        <div class="kpi-sub">+15 lbs vs July (40 lbs)</div>
+        <div class="kpi-value" id="kpi-assist-val">15 / 45 lb</div>
+        <div class="kpi-sub" id="kpi-assist-sub">+25 lbs real strength gained each</div>
       </div>
     </section>
 
     <!-- Navigation Tabs -->
     <nav class="tabs">
-      <button class="tab-btn active" onclick="switchTab('progression', this)">4-Month Progression</button>
+      <button class="tab-btn active" onclick="switchTab('progression', this)">Progression Tracker</button>
       <button class="tab-btn" onclick="switchTab('routines', this)">Active Workout Split</button>
       <button class="tab-btn" onclick="switchTab('backups', this)">Backup Exercises</button>
       <button class="tab-btn" onclick="switchTab('settings', this)">Machine Pin Settings &amp; Rules</button>
     </nav>
 
-    <!-- TAB 1: 4-MONTH PROGRESSION -->
+    <!-- TAB 1: PROGRESSION -->
     <div id="tab-progression" class="tab-panel active">
       <div class="section-title">
-        <span>July 2026 Baseline vs. November 2026 Current</span>
+        <span id="prog-section-heading">Progression Since July 7, 2026 (Gym Start)</span>
+        <span class="section-subtitle" id="prog-section-sub">Showing 4-month gains from your July 7 baseline</span>
       </div>
       <div class="progress-grid" id="progression-container"></div>
     </div>
@@ -530,9 +679,9 @@
           <h3>Leg Curls Machine Settings</h3>
           <p style="color: var(--muted); font-size: 0.9rem;">Current working weight: 75 lbs (3 sets, 10-14x, 90s)</p>
           <div class="pin-grid">
-            <div class="pin-box"><span>Front</span><strong>2</strong></div>
-            <div class="pin-box"><span>Medium</span><strong>1</strong></div>
-            <div class="pin-box"><span>Top</span><strong>4-5</strong></div>
+            <div class="pin-box"><span>Front</span><strong id="pin-lc-front">2</strong></div>
+            <div class="pin-box"><span>Medium</span><strong id="pin-lc-med">1</strong></div>
+            <div class="pin-box"><span>Top</span><strong id="pin-lc-top">4-5</strong></div>
           </div>
         </div>
 
@@ -540,8 +689,8 @@
           <h3>Leg Extensions Machine Settings</h3>
           <p style="color: var(--muted); font-size: 0.9rem;">Current working weight: 140 lbs (3 sets, 10-14x, 90s)</p>
           <div class="pin-grid">
-            <div class="pin-box"><span>Back</span><strong>5</strong></div>
-            <div class="pin-box"><span>Front</span><strong>2</strong></div>
+            <div class="pin-box"><span>Back</span><strong id="pin-le-back">5</strong></div>
+            <div class="pin-box"><span>Front</span><strong id="pin-le-front">2</strong></div>
           </div>
         </div>
 
@@ -569,22 +718,44 @@
   </div>
 
   <script>
-    const progressionData = [
-      { name: "Push-Ups", base: "8.5 reps (7-10)", curr: "25 reps", gain: "+16.5 reps (+194%)", pct: 95, sets: "1 set, 8x warmup / 25 max", assisted: false },
-      { name: "Dumbbell Press", base: "40 lbs", curr: "55 lbs", gain: "+15 lbs (+38%)", pct: 82, sets: "4 sets, 6-10x, 2-3m rest", assisted: false },
-      { name: "Assisted Dips", base: "40 lbs assist", curr: "15 lbs assist", gain: "+25 lbs strength", pct: 88, sets: "3 sets, 6-8x, 2m rest (lower = stronger)", assisted: true },
-      { name: "Incline Press", base: "30 lbs", curr: "40 lbs", gain: "+10 lbs (+33%)", pct: 76, sets: "3 sets, 6-10x, 2-3m rest", assisted: false },
-      { name: "Shoulder Press", base: "30 lbs", curr: "40 lbs", gain: "+10 lbs (+33%)", pct: 76, sets: "3 sets, 6-10x, 2-3m rest", assisted: false },
-      { name: "Assisted Pull-Ups", base: "70 lbs assist", curr: "45 lbs assist", gain: "+25 lbs strength", pct: 80, sets: "3 sets, 6-10x, 2-3m rest (lower = stronger)", assisted: true },
-      { name: "Assisted Chin-Ups", base: "50 lbs assist", curr: "35 lbs assist", gain: "+15 lbs strength", pct: 75, sets: "3 sets, 6-10x, 2-3m rest (lower = stronger)", assisted: true },
-      { name: "Dumbbell / Hammer Curls", base: "22.5 lbs (20-25)", curr: "30 lbs", gain: "+7.5 lbs (+33%)", pct: 78, sets: "5 sets, 8-12x, 90s Burnout", assisted: false },
-      { name: "Leg Press", base: "150 lbs", curr: "200 lbs", gain: "+50 lbs (+33%)", pct: 86, sets: "4 sets, 6-10x, 2-3m rest", assisted: false },
-      { name: "Hack Squats", base: "135 lbs", curr: "155 lbs", gain: "+20 lbs (+15%)", pct: 72, sets: "4 sets, 6-10x, 2-3m rest", assisted: false },
-      { name: "Leg Extensions", base: "120 lbs", curr: "140 lbs", gain: "+20 lbs (+17%)", pct: 75, sets: "3 sets, 10-14x, 90s rest", assisted: false },
-      { name: "Leg Curls", base: "60 lbs", curr: "75 lbs", gain: "+15 lbs (+25%)", pct: 78, sets: "3 sets, 10-14x, 90s rest", assisted: false },
-      { name: "Decline & Standard Sit-Ups", base: "0 lbs (BW)", curr: "15 lbs weighted", gain: "+15 lbs", pct: 85, sets: "15 reps weighted", assisted: false },
-      { name: "Stairclimber", base: "8 mins (Lvl 4)", curr: "12 mins (Lvl 4)", gain: "+4 mins (+50%)", pct: 84, sets: "Level 4 on Rest/Active days", assisted: false }
-    ];
+    let currentMode = "july"; // 'july' or 'nov'
+
+    // Default embedded dataset (automatically updated via /lifting-data.json when hosted on Render)
+    let workoutData = {
+      bodyweight: {
+        july_2026_start: 175.0,
+        peak_bulk: 187.0,
+        nov_8_2026_start: 183.0,
+        current: 183.0
+      },
+      exercises: [
+        { key: "bodyweight", name: "Bodyweight", julyVal: 175, julyText: "175 lbs (Peaked 187)", novVal: 183, currVal: 183, unit: "lbs", sets: "Started 175 lbs -> got up to 187 lbs -> back at 183 lbs", assisted: false, isBodyweight: true },
+        { key: "push_ups", name: "Push-Ups", julyVal: 8.5, julyText: "8.5 reps (7-10)", novVal: 25, currVal: 25, unit: "reps", sets: "1 set, 8x warmup / 25 max", assisted: false },
+        { key: "dumbbell_press", name: "Dumbbell Press", julyVal: 40, novVal: 55, currVal: 55, unit: "lbs", sets: "4 sets, 6-10x, 2-3m rest", assisted: false },
+        { key: "dips_assisted", name: "Assisted Dips", julyVal: 40, novVal: 15, currVal: 15, unit: "lbs assist", sets: "3 sets, 6-8x, 2m rest (lower = stronger)", assisted: true },
+        { key: "incline_press", name: "Incline Press", julyVal: 30, novVal: 40, currVal: 40, unit: "lbs", sets: "3 sets, 6-10x, 2-3m rest", assisted: false },
+        { key: "shoulder_press", name: "Shoulder Press", julyVal: 30, novVal: 40, currVal: 40, unit: "lbs", sets: "3 sets, 6-10x, 2-3m rest", assisted: false },
+        { key: "lat_raise_machine", name: "Lat Raise Machine", julyVal: null, novVal: 70, currVal: 70, unit: "lbs", sets: "3 sets, 8-12x, 60-90s rest", assisted: false },
+        { key: "single_arm_cable_pushdown", name: "Single Arm Cable Pushdown", julyVal: null, novVal: 30, currVal: 30, unit: "lbs", sets: "3 sets, 8-12x, 45-60s Burnout", assisted: false },
+        { key: "shoulder_lat_dumbbell_rotations", name: "Shoulder / Lat DB Rotations", julyVal: null, novVal: 14, currVal: 14, unit: "lbs", sets: "2 sets, 8-12x, 45-60s Burnout", assisted: false },
+        { key: "pull_ups_assisted", name: "Assisted Pull-Ups", julyVal: 70, novVal: 45, currVal: 45, unit: "lbs assist", sets: "3 sets, 6-10x, 2-3m rest (lower = stronger)", assisted: true },
+        { key: "chin_ups_assisted", name: "Assisted Chin-Ups", julyVal: 50, novVal: 35, currVal: 35, unit: "lbs assist", sets: "3 sets, 6-10x, 2-3m rest (lower = stronger)", assisted: true },
+        { key: "seated_close_grip_vbar_row", name: "Seated Close-Grip (V-Bar) Row", julyVal: null, novVal: 115, currVal: 115, unit: "lbs", sets: "3 sets, 6-10x, 2m rest", assisted: false },
+        { key: "preacher_curls", name: "Preacher Curls", julyVal: null, novVal: 35, currVal: 35, unit: "lbs", sets: "3 sets, 6-10x, 90s rest", assisted: false },
+        { key: "rear_delt_machine", name: "Rear Delt Machine", julyVal: null, novVal: 70, currVal: 70, unit: "lbs", sets: "3 sets, 10-14x, 60-90s Burnout", assisted: false },
+        { key: "dumbbell_hammer_curls", name: "Dumbbell / Hammer Curls", julyVal: 22.5, julyText: "22.5 lbs (20-25)", novVal: 30, currVal: 30, unit: "lbs", sets: "5 sets, 8-12x, 90s Burnout", assisted: false },
+        { key: "leg_press", name: "Leg Press", julyVal: 150, novVal: 200, currVal: 200, unit: "lbs", sets: "4 sets, 6-10x, 2-3m rest", assisted: false },
+        { key: "hack_squats", name: "Hack Squats", julyVal: 135, novVal: 155, currVal: 155, unit: "lbs", sets: "4 sets, 6-10x, 2-3m rest", assisted: false },
+        { key: "bulgarian_split_squats", name: "Bulgarian Split Squats", julyVal: 15, novVal: 15, currVal: 15, unit: "lbs", sets: "3 sets, 6-8x, 2m rest", assisted: false },
+        { key: "hip_thrust_machine", name: "Hip Thrust Machine", julyVal: 10, novVal: 10, currVal: 10, unit: "lbs", sets: "3 sets, 8-12x, 60-90s rest", assisted: false },
+        { key: "leg_curls", name: "Leg Curls", julyVal: 60, novVal: 75, currVal: 75, unit: "lbs", sets: "3 sets, 10-14x, 90s rest (Pins: F2/M1/T4-5)", assisted: false },
+        { key: "hip_abduction_push", name: "Hip Abduction (Push)", julyVal: null, novVal: 120, currVal: 120, unit: "lbs", sets: "4 sets, 15-20x, 45s rest", assisted: false },
+        { key: "leg_extensions", name: "Leg Extensions", julyVal: 120, novVal: 140, currVal: 140, unit: "lbs", sets: "3 sets, 10-14x, 90s rest (Pins: B5/F2)", assisted: false },
+        { key: "standing_calf", name: "Standing Calf", julyVal: null, novVal: 60, currVal: 60, unit: "lbs", sets: "4 sets, 15-20x, 60s rest", assisted: false },
+        { key: "decline_sit_ups", name: "Decline & Weighted Sit-Ups", julyVal: 0, julyText: "0 lbs (Bodyweight)", novVal: 15, currVal: 15, unit: "lbs", sets: "15 reps weighted", assisted: false },
+        { key: "stairclimber", name: "Stairclimber (Level 4)", julyVal: 8, novVal: 12, currVal: 12, unit: "mins", sets: "Level 4 on Active Recovery days", assisted: false }
+      ]
+    };
 
     const routines = {
       push: [
@@ -657,37 +828,135 @@
       }
     ];
 
-    // Render Progression
-    const progContainer = document.getElementById("progression-container");
-    progressionData.forEach(item => {
-      const card = document.createElement("div");
-      card.className = "progress-card";
-      card.innerHTML = `
-        <div class="progress-header">
-          <div>
-            <span class="exercise-name">${item.name}</span>
-            ${item.assisted ? '<span class="assisted-tag">ASSISTED</span>' : ''}
-          </div>
-          <span class="gain-pill">${item.gain}</span>
-        </div>
-        <div class="stats-compare">
-          <div class="stat-box">
-            <span>July 2026</span>
-            <strong>${item.base}</strong>
-          </div>
-          <div class="arrow">&rarr;</div>
-          <div class="stat-box current">
-            <span>Current</span>
-            <strong>${item.curr}</strong>
-          </div>
-        </div>
-        <div class="bar-bg"><div class="bar-fill" style="width: ${item.pct}%"></div></div>
-        <div class="routine-meta">${item.sets}</div>
-      `;
-      progContainer.appendChild(card);
-    });
+    function formatDelta(item, mode) {
+      const baseVal = mode === "july" ? item.julyVal : item.novVal;
+      const currVal = item.currVal;
+      if (baseVal === null || baseVal === undefined) {
+        return { text: "Active Target", isBaseline: true, pct: 70 };
+      }
+      if (item.isBodyweight) {
+        if (mode === "july") {
+          const diff = currVal - baseVal;
+          const sign = diff >= 0 ? "+" : "";
+          return { text: `${sign}${diff} lbs (Peak 187)`, isBaseline: false, pct: 85 };
+        } else {
+          const diff = currVal - baseVal;
+          if (diff === 0) return { text: "183 lbs Baseline", isBaseline: true, pct: 65 };
+          const sign = diff > 0 ? "+" : "";
+          return { text: `${sign}${diff} lbs vs Nov 8`, isBaseline: false, pct: 80 };
+        }
+      }
 
-    // Render Routines
+      if (item.assisted) {
+        const strengthGain = baseVal - currVal; // Lower assistance = more strength
+        if (strengthGain === 0) {
+          return { text: mode === "nov" ? "Nov 8 Baseline Set" : "No change", isBaseline: true, pct: 60 };
+        }
+        const sign = strengthGain > 0 ? "+" : "";
+        return { text: `${sign}${strengthGain} lbs strength`, isBaseline: false, pct: Math.min(95, Math.max(45, 65 + strengthGain)) };
+      } else {
+        const diff = currVal - baseVal;
+        if (diff === 0) {
+          return { text: mode === "nov" ? "Nov 8 Baseline Set" : "Maintained", isBaseline: true, pct: 60 };
+        }
+        const sign = diff > 0 ? "+" : "";
+        const unitShort = item.unit.replace(" assist", "");
+        return { text: `${sign}${diff} ${unitShort}`, isBaseline: false, pct: 85 };
+      }
+    }
+
+    function renderProgression() {
+      const progContainer = document.getElementById("progression-container");
+      progContainer.innerHTML = "";
+
+      const isJuly = currentMode === "july";
+      document.getElementById("btn-july").classList.toggle("active", isJuly);
+      document.getElementById("btn-nov").classList.toggle("active", !isJuly);
+
+      document.getElementById("header-subtitle").innerHTML = isJuly
+        ? "Comparing: Starting July 7, 2026 &rarr; Current (4-Month Progression)"
+        : "Comparing: Starting November 8, 2026 (Official Tracking Start) &rarr; Current";
+
+      document.getElementById("prog-section-heading").textContent = isJuly
+        ? "Progression Since July 7, 2026 (Gym Start)"
+        : "Progression Since November 8, 2026 (Official Tracking Start)";
+
+      document.getElementById("prog-section-sub").textContent = isJuly
+        ? "Showing 4-month gains from your July 7 starting weights"
+        : "Showing all active exercises anchored to your Nov 8 starting baseline";
+
+      // Update KPI subtitles based on mode
+      const bwItem = workoutData.exercises.find(e => e.key === "bodyweight");
+      const puItem = workoutData.exercises.find(e => e.key === "push_ups");
+      const lpItem = workoutData.exercises.find(e => e.key === "leg_press");
+      const dipItem = workoutData.exercises.find(e => e.key === "dips_assisted");
+      const pullItem = workoutData.exercises.find(e => e.key === "pull_ups_assisted");
+
+      document.getElementById("kpi-bw-val").textContent = `${bwItem.currVal} lbs`;
+      document.getElementById("kpi-bw-sub").innerHTML = isJuly
+        ? "175 start &rarr; 187 peak &rarr; 183 now"
+        : `Nov 8 Baseline: 183 lbs (${bwItem.currVal - 183 >= 0 ? '+' : ''}${bwItem.currVal - 183} lbs)`;
+
+      document.getElementById("kpi-pushup-val").textContent = `${puItem.currVal} reps`;
+      document.getElementById("kpi-pushup-sub").textContent = isJuly
+        ? `+${puItem.currVal - puItem.julyVal} reps vs July 7 (7-10)`
+        : `Nov 8 Baseline: ${puItem.novVal} reps (${puItem.currVal - puItem.novVal >= 0 ? '+' : ''}${puItem.currVal - puItem.novVal})`;
+
+      document.getElementById("kpi-legpress-val").textContent = `${lpItem.currVal} lbs`;
+      document.getElementById("kpi-legpress-sub").textContent = isJuly
+        ? `+${lpItem.currVal - lpItem.julyVal} lbs vs July 7 (150 lbs)`
+        : `Nov 8 Baseline: ${lpItem.novVal} lbs (${lpItem.currVal - lpItem.novVal >= 0 ? '+' : ''}${lpItem.currVal - lpItem.novVal} lbs)`;
+
+      document.getElementById("kpi-assist-val").textContent = `${dipItem.currVal} / ${pullItem.currVal} lb`;
+      document.getElementById("kpi-assist-sub").textContent = isJuly
+        ? "+25 lbs real strength gained each"
+        : `Nov 8 Baseline: ${dipItem.novVal} lb dips / ${pullItem.novVal} lb pull-ups`;
+
+      // Filter exercises: in July mode, show exercises that have a July baseline (plus bodyweight); in Nov mode, show all active exercises
+      const list = workoutData.exercises.filter(item => isJuly ? item.julyVal !== null : true);
+
+      list.forEach(item => {
+        const baseLabel = isJuly ? "July 7 Start" : "Nov 8 Start";
+        const baseDisplay = isJuly
+          ? (item.julyText || `${item.julyVal} ${item.unit}`)
+          : `${item.novVal} ${item.unit}`;
+        const currDisplay = `${item.currVal} ${item.unit}`;
+        const delta = formatDelta(item, currentMode);
+
+        const card = document.createElement("div");
+        card.className = "progress-card";
+        card.innerHTML = `
+          <div class="progress-header">
+            <div>
+              <span class="exercise-name">${item.name}</span>
+              ${item.assisted ? '<span class="assisted-tag">ASSISTED</span>' : ''}
+            </div>
+            <span class="gain-pill ${delta.isBaseline ? 'baseline' : ''}">${delta.text}</span>
+          </div>
+          <div class="stats-compare">
+            <div class="stat-box">
+              <span>${baseLabel}</span>
+              <strong>${baseDisplay}</strong>
+            </div>
+            <div class="arrow">&rarr;</div>
+            <div class="stat-box current">
+              <span>Current</span>
+              <strong>${currDisplay}</strong>
+            </div>
+          </div>
+          <div class="bar-bg"><div class="bar-fill" style="width: ${delta.pct}%"></div></div>
+          <div class="routine-meta">${item.sets}</div>
+        `;
+        progContainer.appendChild(card);
+      });
+    }
+
+    function setBaselineMode(mode) {
+      currentMode = mode;
+      renderProgression();
+    }
+
+    // Render Routines & Backups
     Object.keys(routines).forEach(key => {
       const ul = document.getElementById(`routine-${key}`);
       routines[key].forEach(([name, detail]) => {
@@ -697,7 +966,6 @@
       });
     });
 
-    // Render Backups
     const backupsContainer = document.getElementById("backups-container");
     backups.forEach(group => {
       const card = document.createElement("div");
@@ -719,6 +987,30 @@
       document.getElementById(`tab-${tabId}`).classList.add("active");
       btn.classList.add("active");
     }
+
+    // Fetch live cloud updates when hosted on Render (/lifting-data.json)
+    async function syncLiveCloudData() {
+      try {
+        const res = await fetch("/lifting-data.json", { cache: "no-store" });
+        if (!res.ok) return;
+        const cloud = await res.json();
+        const currMap = cloud.current_targets_and_maxes || {};
+        workoutData.exercises.forEach(item => {
+          if (currMap[item.key] && typeof currMap[item.key].value === "number") {
+            item.currVal = currMap[item.key].value;
+          }
+        });
+        if (currMap.bodyweight && typeof currMap.bodyweight.value === "number") {
+          document.getElementById("bw-curr-val").textContent = `${currMap.bodyweight.value} lbs`;
+        }
+        renderProgression();
+      } catch (e) {
+        // Local file:// mode fallback uses embedded data
+      }
+    }
+
+    renderProgression();
+    syncLiveCloudData();
   </script>
 </body>
 </html>

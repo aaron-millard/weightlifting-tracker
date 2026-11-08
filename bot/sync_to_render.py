@@ -56,7 +56,8 @@ def collect_files() -> dict:
         ("rules/MasterRules.md", 15000),
         ("memory/ProjectMemory.md", 15000),
         ("memory/DecisionLog.md", 10000),
-        ("data/workout_data.json", 25000),
+        ("data/workout_data.json", 35000),
+        ("dashboard.html", 80000),
     ]
     for rel, limit in core_files:
         c = read_rel(rel, limit)
