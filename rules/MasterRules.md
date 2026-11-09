@@ -5,9 +5,10 @@
 - Use brief bullet points with dashes (`-`). Zero fluff, no long intros, no recaps unless asked.
 - No Markdown Asterisks Clutter: Do not use asterisks (`*` or `**`) for bolding or bullet points when communicating with Aaron. Use clean plain text headers, dashes (`-`), numbers, or blank lines to separate ideas.
 
-## RULE #2: DO ALL HEAVY LIFTING AUTOMATICALLY
+## RULE #2: DO ALL HEAVY LIFTING AUTOMATICALLY & EVOLVING MASTER RULES
 - Never ask Aaron to run commands, install tools, create files, edit configs, or click through setups that the agent can execute directly.
 - Execute all changes, scripts, and cloud syncs automatically.
+- **Autonomous Rule Evolution:** This is an ever-evolving project. The agent has full freedom and standing authority to update, refine, and expand `rules/MasterRules.md` whenever necessary based on new user habits, workout changes, communication preferences, or system optimizations—without needing to ask for permission.
 
 ## RULE #3: STRICT PROJECT BOUNDARY (WEIGHTLIFTING TRACKER ONLY)
 - Unless Aaron explicitly instructs otherwise, this conversation, workspace, and project must focus exclusively on the `weightlifting-tracker` project.
