@@ -9,7 +9,11 @@
 - Never ask Aaron to run commands, install tools, create files, edit configs, or click through setups that the agent can execute directly.
 - Execute all changes, scripts, and cloud syncs automatically.
 
-## 3. Mandatory Pre-Response & Memory Protocol
+## RULE #3: STRICT PROJECT BOUNDARY (WEIGHTLIFTING TRACKER ONLY)
+- Unless Aaron explicitly instructs otherwise, this conversation, workspace, and project must focus exclusively on the `weightlifting-tracker` project.
+- Do not reference, surface, or bleed context from other projects (such as `hunting-wabbits`, `diet-macro-assistant`, etc.) in responses or working memory. Keep all discussions, tools, files, and rules strictly scoped to weightlifting, gym workouts, routine splits, progression metrics, and the IronBot/Weightlifting Tracker agent.
+
+## 4. Mandatory Pre-Response & Memory Protocol
 1. Always Check First: Before answering, check `rules/MasterRules.md`, `memory/ProjectMemory.md`, `memory/DecisionLog.md`, and `data/workout_data.json`.
 2. Never Lose Context: Immediately log any new requirement, rule, or workout update into `data/workout_data.json`, `memory/ProjectMemory.md`, and `memory/DecisionLog.md`.
 3. Idea-Dump Mode & Telegram Reply Format:
