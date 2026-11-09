@@ -31,7 +31,10 @@ Last Updated: 2026-11-08
 - Leg Curls: Front 2 | Medium 1 | Top 4-5
 - Leg Extension: Back 5 | Front 2
 
-## 4. System Architecture
+## 4. Active Experiments & Next Session Notes
+- Next Leg Day (Day 3 Hinge Trial): Test both the **45° Hyperextension Bench** (with bodyweight or light plate/dumbbell) and the **Seated Back Extension Machine** head-to-head. Compare hamstring/glute stretch vs lower back fatigue, pick the winner, and formally lock it in as the official Day 3 hinge lift.
+
+## 5. System Architecture
 - Workspace: `C:\Users\aaron\OneDrive\Desktop\My Projects\weightlifting-tracker`
 - Telegram Bot: `@WeightliftingTracker_Bot` (`weightlifting-tracker-bot`)
 - 24/7 Cloud Hosting: Hosted on Render at `https://macrodave.onrender.com/lifting-webhook` alongside the Macro and Hunting Wabbits bots on the single 24/7 Render container.
