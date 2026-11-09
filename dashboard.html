@@ -1216,8 +1216,8 @@
     // Fetch live cloud updates when hosted on Render (/lifting-data.json)
     async function syncLiveCloudData() {
       try {
-        const res = await fetch("/lifting-data.json", { cache: "no-store" });
-        if (!res.ok) return;
+        const res = await fetch("/weightlifting-tracker-data.json", { cache: "no-store" });
+        if (!res.ok) { const fallback = await fetch("/lifting-data.json"); if (fallback.ok) cloud = await fallback.json(); else return; } else { cloud = await res.json(); }
         const cloud = await res.json();
         const currMap = cloud.current_targets_and_maxes || {};
         workoutData.exercises.forEach(item => {

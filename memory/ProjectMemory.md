@@ -40,8 +40,10 @@ Last Updated: 2026-11-08
 - Next Leg Day (Day 3 Hinge Trial): Test both the **45° Hyperextension Bench** (with bodyweight or light plate/dumbbell) and the **Seated Back Extension Machine** head-to-head. Compare hamstring/glute stretch vs lower back fatigue, pick the winner, and formally lock it in as the official Day 3 hinge lift.
 
 ## 5. System Architecture
-- Workspace: `C:\Users\aaron\OneDrive\Desktop\My Projects\weightlifting-tracker`
+- Project Name & GitHub: `weightlifting-tracker` (`https://github.com/DaveMatthews2662/weightlifting-tracker`)
+- Workspace Directory: `C:\Users\aaron\OneDrive\Desktop\My Projects\weightlifting-tracker`
 - Telegram Bot: `@WeightliftingTracker_Bot` (`weightlifting-tracker-bot`)
-- 24/7 Cloud Hosting: Hosted on Render at `https://macrodave.onrender.com/lifting-webhook` alongside the Macro and Hunting Wabbits bots on the single 24/7 Render container.
-- Encrypted Vault (`bot/lifting_vault.json` in `diet-macro-assistant` via `bot/sync_to_render.py`): Encrypts `MasterRules.md`, `ProjectMemory.md`, `DecisionLog.md`, `workout_data.json`, and the bot token using PBKDF2-HMAC-SHA256 keyed by `GEMINI_API_KEY`.
-- Persistent Cloud State: Runtime workout logs, weight updates, machine settings, and idea-dump notes are persisted in Telegram's cloud via `setMyCommands` (`all_chat_administrators`, `language_code: "eo"`) so Render restarts never lose state.
+- 24/7 Cloud Hosting & Webhook: Hosted on Render at `https://macrodave.onrender.com/weightlifting-tracker-webhook`
+- Live 24/7 Cloud Dashboard: `https://macrodave.onrender.com/weightlifting-tracker` (live data: `/weightlifting-tracker-data.json`)
+- Encrypted Vault: `bot/weightlifting_tracker_vault.json` (synced via `bot/sync_to_render.py` using PBKDF2-HMAC-SHA256 keyed by `GEMINI_API_KEY`)
+- Persistent Cloud State: Stored in Telegram's cloud via `setMyCommands` (`all_chat_administrators`, `language_code: "eo"`) so Render restarts never lose state.

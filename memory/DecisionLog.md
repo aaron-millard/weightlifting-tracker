@@ -1,5 +1,11 @@
 # Decision & Session Log — Weightlifting Tracker
 
+## 2026-11-09 — Standardized Naming Convention to weightlifting-tracker
+- Created official GitHub repository: `https://github.com/DaveMatthews2662/weightlifting-tracker`.
+- Updated Render cloud routes to `https://macrodave.onrender.com/weightlifting-tracker` (dashboard), `/weightlifting-tracker-data.json` (live API), and `/weightlifting-tracker-webhook` (Telegram webhook).
+- Updated Telegram bot webhook registration to point to `/weightlifting-tracker-webhook`.
+- Ensured all project folders, files, and git remotes strictly adhere to `weightlifting-tracker`.
+
 ## 2026-11-09 — Telegram Gym Idea Dumps & MasterRules Update
 - Received and ingested gym idea dumps from Telegram:
   1. Stairclimber split into two separate units: Day 2 Pull Day is 12 mins at Level 4; Day 4 Rest Day is 15 mins at Level 4 (+3 mins vs Nov 8 start).
