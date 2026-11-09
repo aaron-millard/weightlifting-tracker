@@ -1,0 +1,26 @@
+{
+  "notes": [
+    {
+      "timestamp": "2026-11-09 13:09",
+      "text": "Enter 0*\n\nAlso make a rule when I send \u201cidea dumps\u201d in telegram, I just need you to reply \u201cOkay\u201d."
+    }
+  ],
+  "rules": [],
+  "workout_updates": {
+    "bodyweight": {
+      "value": 182.6,
+      "unit": "lbs",
+      "notes": "Bodyweight logged on Nov 9, 2026"
+    }
+  },
+  "machine_updates": {},
+  "workout_logs": [
+    {
+      "date": "2026-11-09",
+      "exercise": "bodyweight",
+      "value": 182.6,
+      "unit": "lbs",
+      "delta_from_baseline": "+7.6 lbs"
+    }
+  ]
+}

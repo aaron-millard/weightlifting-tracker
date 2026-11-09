@@ -1,5 +1,13 @@
 # Decision & Session Log — Weightlifting Tracker
 
+## 2026-11-09 — Telegram Gym Idea Dumps & MasterRules Update
+- Received and ingested gym idea dumps from Telegram:
+  1. Stairclimber split into two separate units: Day 2 Pull Day is 12 mins at Level 4; Day 4 Rest Day is 15 mins at Level 4 (+3 mins vs Nov 8 start).
+  2. Bodyweight morning weigh-in recorded: 182.6 lbs (-4.4 lbs from 187 peak, +7.6 lbs from July start).
+  3. Telegram idea-dump response format locked in: Reply `Okay.` followed by `Update Summary:` in the simplest possible format. Never show raw JSON blocks.
+  4. Master Rules update permission granted to agent for continuous updates as we go.
+- Updated `rules/MasterRules.md`, `data/workout_data.json`, `ProjectMemory.md`, `dashboard.html`, and bot server scripts.
+
 ## 2026-11-08 — Next Leg Day Hinge Trial Scheduled
 - Identified missing hip hinge in Day 3 (Legs) routine.
 - Aaron decided to test both the **45° Hyperextension Bench** and the **Seated Back Extension Machine** on the next leg workout to compare mind-muscle connection and hamstring/glute recruitment before picking which one to lock into the routine.

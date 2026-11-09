@@ -6,7 +6,7 @@
     "july_2026_start": 175.0,
     "peak_bulk": 187.0,
     "nov_8_2026_start": 183.0,
-    "current": 183.0,
+    "current": 182.6,
     "unit": "lbs",
     "history": [
       {
@@ -23,6 +23,11 @@
         "date": "2026-11-08",
         "weight": 183.0,
         "notes": "Official tracking start (-4 lbs from peak, +8 lbs from July start)"
+      },
+      {
+        "date": "2026-11-09",
+        "weight": 182.6,
+        "notes": "Morning weigh-in (-4.4 lbs from peak 187, +7.6 lbs from July start)"
       }
     ]
   },
@@ -120,6 +125,20 @@
       "value": 175.0,
       "unit": "lbs",
       "notes": "Starting bodyweight (peaked at 187 lbs)"
+    },
+    "stairclimber_pull": {
+      "value": 8.0,
+      "unit": "minutes",
+      "level": 4,
+      "routine_sets": "Day 2 Pull",
+      "notes": "Baseline 8 mins at Level 4"
+    },
+    "stairclimber_rest": {
+      "value": 8.0,
+      "unit": "minutes",
+      "level": 4,
+      "routine_sets": "Day 4 Rest",
+      "notes": "Baseline 8 mins at Level 4"
     }
   },
   "baselines_nov_8_2026": {
@@ -285,6 +304,20 @@
       "value": 183.0,
       "unit": "lbs",
       "notes": "Bodyweight on Nov 8, 2026 official tracking start"
+    },
+    "stairclimber_pull": {
+      "value": 12.0,
+      "unit": "minutes",
+      "level": 4,
+      "routine_sets": "Day 2 Pull",
+      "notes": "Nov 8 tracking start 12 mins at Level 4"
+    },
+    "stairclimber_rest": {
+      "value": 12.0,
+      "unit": "minutes",
+      "level": 4,
+      "routine_sets": "Day 4 Rest",
+      "notes": "Nov 8 tracking start 12 mins at Level 4"
     }
   },
   "current_targets_and_maxes": {
@@ -447,9 +480,25 @@
       "duration": "12:00"
     },
     "bodyweight": {
-      "value": 183.0,
+      "value": 182.6,
       "unit": "lbs",
-      "notes": "Started 175 lbs -> peaked 187 lbs -> currently 183 lbs"
+      "notes": "Bodyweight logged on Nov 9, 2026"
+    },
+    "stairclimber_pull": {
+      "value": 12.0,
+      "level": 4,
+      "duration": "12:00",
+      "unit": "minutes",
+      "routine_sets": "Day 2 Pull",
+      "notes": "12 mins at Level 4 on Pull Day"
+    },
+    "stairclimber_rest": {
+      "value": 15.0,
+      "level": 4,
+      "duration": "15:00",
+      "unit": "minutes",
+      "routine_sets": "Day 4 Rest",
+      "notes": "15 mins at Level 4 on Rest Day (+3 mins vs Nov 8 start)"
     }
   },
   "machine_settings": {
@@ -482,7 +531,8 @@
       "Preacher Curls - 35lb, 3 sets, 6-10x, 90s",
       "Rear Delt Machine - 70lb, 3 sets, 10-14x, 60-90s Burnout",
       "Cable Curls",
-      "Dumbbell Curls / Hammer Curls - 30lb, 5 sets, 8-12x, 90s Burnout"
+      "Dumbbell Curls / Hammer Curls - 30lb, 5 sets, 8-12x, 90s Burnout",
+      "Stairclimber - Level 4, 12m (Pull Day target)"
     ],
     "day_3_legs": [
       "2 Lightweight Warm Ups - Xlb",
@@ -498,7 +548,7 @@
       "Walking - 3.0%, 2.9mph, 30m"
     ],
     "day_4_rest": [
-      "Stairclimber - Level 4, 12m",
+      "Stairclimber - Level 4, 15m (Rest Day target)",
       "Abs 1 or Abs 2",
       "Stretches / Rest"
     ],
@@ -603,6 +653,21 @@
       "date": "2026-11-08",
       "type": "checkpoint",
       "notes": "Project initialized with current active routine and weights."
+    },
+    {
+      "date": "2026-11-09",
+      "exercise": "bodyweight",
+      "value": 182.6,
+      "unit": "lbs",
+      "delta_from_baseline": "+7.6 lbs"
+    },
+    {
+      "date": "2026-11-09",
+      "exercise": "stairclimber_rest",
+      "value": 15.0,
+      "unit": "minutes",
+      "delta_from_baseline": "+7 mins vs July start, +3 mins vs Nov 8 start",
+      "notes": "Split stairclimber tracking into Day 2 Pull (12m L4) and Day 4 Rest (15m L4)"
     }
   ]
 }

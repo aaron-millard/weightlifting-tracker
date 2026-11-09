@@ -596,7 +596,7 @@
     <section class="bw-banner">
       <div>
         <div class="bw-title">Bodyweight Trajectory</div>
-        <div class="bw-summary" id="bw-summary-text">Started at 175 lbs (July 7) &rarr; Peaked at 187 lbs (+12 lbs bulk) &rarr; Now at 183 lbs (-4 lbs cut, +8 lbs net)</div>
+        <div class="bw-summary" id="bw-summary-text">Started at 175 lbs (July 7) &rarr; Peaked at 187 lbs (+12 lbs bulk) &rarr; Now at 182.6 lbs (-4.4 lbs from peak, +7.6 lbs net)</div>
       </div>
       <div class="bw-steps">
         <div class="bw-step" id="bw-step-july">
@@ -613,8 +613,8 @@
         <div class="arrow">&rarr;</div>
         <div class="bw-step highlight" id="bw-step-curr">
           <span>Nov 8 / Current</span>
-          <strong id="bw-curr-val">183 lbs</strong>
-          <small id="bw-curr-delta">-4 lbs from peak</small>
+          <strong id="bw-curr-val">182.6 lbs</strong>
+          <small id="bw-curr-delta">-4.4 lbs from peak</small>
         </div>
       </div>
     </section>
@@ -841,10 +841,10 @@
         july_2026_start: 175.0,
         peak_bulk: 187.0,
         nov_8_2026_start: 183.0,
-        current: 183.0
+        current: 182.6
       },
       exercises: [
-        { key: "bodyweight", name: "Bodyweight", julyVal: 175, julyText: "175 lbs (Peaked 187)", novVal: 183, currVal: 183, unit: "lbs", sets: "Started 175 lbs -> got up to 187 lbs -> back at 183 lbs", assisted: false, isBodyweight: true },
+        { key: "bodyweight", name: "Bodyweight", julyVal: 175, julyText: "175 lbs (Peaked 187)", novVal: 183, currVal: 182.6, unit: "lbs", sets: "Started 175 lbs -> peaked 187 lbs -> currently 182.6 lbs (Morning weigh-in)", assisted: false, isBodyweight: true },
         { key: "push_ups", name: "Push-Ups", julyVal: 8.5, julyText: "8.5 reps (7-10)", novVal: 25, currVal: 25, unit: "reps", sets: "1 set, 8x warmup / 25 max", assisted: false },
         { key: "dumbbell_press", name: "Dumbbell Press", julyVal: 40, novVal: 55, currVal: 55, unit: "lbs", sets: "4 sets, 6-10x, 2-3m rest", assisted: false },
         { key: "dips_assisted", name: "Assisted Dips", julyVal: 40, novVal: 15, currVal: 15, unit: "lbs assist", sets: "3 sets, 6-8x, 2m rest (lower = stronger)", assisted: true },
@@ -868,7 +868,8 @@
         { key: "leg_extensions", name: "Leg Extensions", julyVal: 120, novVal: 140, currVal: 140, unit: "lbs", sets: "3 sets, 10-14x, 90s rest (Pins: B5/F2)", assisted: false },
         { key: "standing_calf", name: "Standing Calf", julyVal: null, novVal: 60, currVal: 60, unit: "lbs", sets: "4 sets, 15-20x, 60s rest", assisted: false },
         { key: "decline_sit_ups", name: "Decline & Weighted Sit-Ups", julyVal: 0, julyText: "0 lbs (Bodyweight)", novVal: 15, currVal: 15, unit: "lbs", sets: "15 reps weighted", assisted: false },
-        { key: "stairclimber", name: "Stairclimber (Level 4)", julyVal: 8, novVal: 12, currVal: 12, unit: "mins", sets: "Level 4 on Active Recovery days", assisted: false }
+        { key: "stairclimber_pull", name: "Stairclimber (Pull Day)", julyVal: 8, novVal: 12, currVal: 12, unit: "mins", sets: "Day 2 Pull: 12:00 at Level 4", assisted: false },
+        { key: "stairclimber_rest", name: "Stairclimber (Rest Day)", julyVal: 8, novVal: 12, currVal: 15, unit: "mins", sets: "Day 4 Rest: 15:00 at Level 4 (+3m vs Nov 8)", assisted: false }
       ],
       workout_logs: []
     };
@@ -892,7 +893,8 @@
         ["Preacher Curls", "35 lb | 3 sets, 6-10x, 90s"],
         ["Rear Delt Machine", "70 lb | 3 sets, 10-14x, 60-90s Burnout"],
         ["Cable Curls", "Standard sets"],
-        ["Dumbbell / Hammer Curls", "30 lb | 5 sets, 8-12x, 90s Burnout"]
+        ["Dumbbell / Hammer Curls", "30 lb | 5 sets, 8-12x, 90s Burnout"],
+        ["Stairclimber", "Level 4 | 12:00 mins (Pull Day Target)"]
       ],
       legs: [
         ["Lightweight Warm-Ups", "2 sets"],
@@ -908,7 +910,7 @@
         ["Incline Treadmill Walk", "3.0% incline, 2.9 mph, 30 mins"]
       ],
       rest: [
-        ["Stairclimber", "Level 4 | 12:00 mins"],
+        ["Stairclimber", "Level 4 | 15:00 mins (Rest Day Target)"],
         ["Abs 1 — Ab Wheel", "6 reps"],
         ["Abs 1 — Decline Sit-Ups", "15 lb | 15 reps"],
         ["Abs 1 — Planks", "60s, 45s, 45s"],
