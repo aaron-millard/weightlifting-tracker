@@ -1,3 +1,8 @@
+## 2026-11-10 — GitHub Remote Updated to aaron-millard
+- Aaron renamed GitHub username to `aaron-millard`.
+- Updated git remote `origin` to `https://github.com/aaron-millard/weightlifting-tracker.git`.
+- Verified git fetch successfully.
+
 ## 2026-11-10 — Complete Workout Split, Rep Counts, Schedule & Walking Scale Ingested
 - Ingested Aaron's official 4-day split schedule and rotation (Push 1/2, Pull, Legs 1/2, Rest).
 - Explicit accessory pairing locked in:

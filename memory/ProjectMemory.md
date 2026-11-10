@@ -61,7 +61,7 @@ Last Updated: 2026-11-08
   - 2k = 20m = 95c | 4k = 40m = 190c | 6k = 1hr = 285c | 8k = 1hr 20m = 380c | 10k = 1hr 40m = 475c | 12k = 2hr = 570c | 14k = 2hr 20m = 665c | 16k = 2hr 40m = 760c | 18k = 3hr = 855c | 20k = 3hr 20m = 950c
 
 ## 6. System Architecture
-- Project Name & GitHub: `weightlifting-tracker` (`https://github.com/DaveMatthews2662/weightlifting-tracker`)
+- Project Name & GitHub: `weightlifting-tracker` (`https://github.com/aaron-millard/weightlifting-tracker`)
 - Workspace Directory: `C:\Users\aaron\OneDrive\Desktop\My Projects\weightlifting-tracker`
 - Telegram Bot: `@WeightliftingTracker_Bot` (`weightlifting-tracker-bot`)
 - 24/7 Cloud Hosting & Webhook: Hosted on Render at `https://macrodave.onrender.com/weightlifting-tracker-webhook`
