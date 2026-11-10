@@ -39,7 +39,28 @@ Last Updated: 2026-11-08
 ## 4. Active Experiments & Next Session Notes
 - Next Leg Day (Day 3 Hinge Trial): Test both the **45° Hyperextension Bench** (with bodyweight or light plate/dumbbell) and the **Seated Back Extension Machine** head-to-head. Compare hamstring/glute stretch vs lower back fatigue, pick the winner, and formally lock it in as the official Day 3 hinge lift.
 
-## 5. System Architecture
+## 5. Workout Rotation & Accessory Schedule
+- 4-Day Microcycle Pairing:
+  - Push Days: Abs 1 Protocol (2 sets: Ab Wheel 6x, Push Ups 8x, Decline Sit-Ups 10lb 6-10x, Push Ups 8x, Planks 45s/60s)
+  - Pull Days: Stairclimber (12:00 mins @ Level 4)
+  - Leg Days: Abs 2 Protocol (3 sets: Weighted Sit-Ups 15lb 15x, Side Planks 30s/30s/30s)
+  - Rest Days: Stairclimber (15:00 mins @ Level 4)
+- Current 11-Day Cycle (11/6 – 11/16):
+  - Fri 11/6: Push 2 + Abs 1
+  - Sat 11/7: Pull + Stairclimber 12m
+  - Sun 11/8: Legs 1 + Abs 2
+  - Mon 11/9: Rest + Stairclimber 15m
+  - Tue 11/10 (Today): Push 1 + Abs 1
+  - Wed 11/11: Pull + Stairclimber 12m
+  - Thu 11/12: Legs 2 (Hinge Trial: 45° Hyperextension vs Seated Machine) + Abs 2
+  - Fri 11/13: Rest + Stairclimber 15m
+  - Sat 11/14: Push 2 + Abs 1
+  - Sun 11/15: Pull + Stairclimber 12m
+  - Mon 11/16: Legs 1 + Abs 2
+- Walking Calorie Scale Reference:
+  - 2k = 20m = 95c | 4k = 40m = 190c | 6k = 1hr = 285c | 8k = 1hr 20m = 380c | 10k = 1hr 40m = 475c | 12k = 2hr = 570c | 14k = 2hr 20m = 665c | 16k = 2hr 40m = 760c | 18k = 3hr = 855c | 20k = 3hr 20m = 950c
+
+## 6. System Architecture
 - Project Name & GitHub: `weightlifting-tracker` (`https://github.com/DaveMatthews2662/weightlifting-tracker`)
 - Workspace Directory: `C:\Users\aaron\OneDrive\Desktop\My Projects\weightlifting-tracker`
 - Telegram Bot: `@WeightliftingTracker_Bot` (`weightlifting-tracker-bot`)

@@ -1,3 +1,14 @@
+## 2026-11-10 — Complete Workout Split, Rep Counts, Schedule & Walking Scale Ingested
+- Ingested Aaron's official 4-day split schedule and rotation (Push 1/2, Pull, Legs 1/2, Rest).
+- Explicit accessory pairing locked in:
+  - Push Days: Abs 1 (2 sets: Ab Wheel 6x, Push Ups 8x, Decline Sit-Ups 10lb 6-10x, Push Ups 8x, Planks 45s/60s).
+  - Pull Days: Stairclimber (12m @ Level 4).
+  - Leg Days: Abs 2 (3 sets: Sit-Ups 15lb 15x, Side Planks 30s/30s/30s).
+  - Rest Days: Stairclimber (15m @ Level 4).
+- Added exact rep counts below every workout graph and tracker card (`6-10x`, `8-12x`, `10-14x`, etc.).
+- Ingested walking calorie burn reference scale (2k steps/95c up to 20k steps/950c).
+- Updated `workout_data.json`, `ProjectMemory.md`, `dashboard.html`, and synced to Render.
+
 ## 2026-11-10 — Universal Roger Roger Affirmation Rule
 - Replaced "Okay" / "Okay." with "Roger Roger." across all rules and bot prompts.
 - Telegram idea dumps now acknowledge with `Roger Roger.` followed by `Update Summary:`.

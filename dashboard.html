@@ -622,6 +622,7 @@
     <!-- Navigation Tabs -->
     <nav class="tabs">
       <button class="tab-btn active" onclick="switchTab('core', this)">Core Benchmark Lifts (The Big 6)</button>
+      <button class="tab-btn" onclick="switchTab('schedule', this)">Workout Calendar &amp; Walking Scale</button>
       <button class="tab-btn" onclick="switchTab('progression', this)">All Lifts Progression</button>
       <button class="tab-btn" onclick="switchTab('routines', this)">Active Workout Split</button>
       <button class="tab-btn" onclick="switchTab('backups', this)">Backup Exercises</button>
@@ -635,6 +636,77 @@
         <span class="section-subtitle" id="core-section-sub">Focus on progressive overload on these 6 compound pillars; everything else is accessory volume</span>
       </div>
       <div class="core-grid" id="core-container"></div>
+    </div>
+
+        <!-- TAB SCHEDULE: WORKOUT CALENDAR, ACCESSORIES & WALKING CALORIE SCALE -->
+    <div id="tab-schedule" class="tab-panel">
+      <div class="two-col" style="margin-bottom: 24px;">
+        <div class="info-card">
+          <h3>Daily Accessory Pairing Rule</h3>
+          <ul class="exercise-list" style="padding: 0;">
+            <li><span class="ex-title">Push Days (Day 1)</span><span class="ex-detail" style="color: var(--amber);">Abs 1 Routine</span></li>
+            <li><span class="ex-title">Pull Days (Day 2)</span><span class="ex-detail" style="color: var(--accent);">Stairclimber (12:00 mins @ Level 4)</span></li>
+            <li><span class="ex-title">Leg Days (Day 3)</span><span class="ex-detail" style="color: var(--green);">Abs 2 Routine</span></li>
+            <li><span class="ex-title">Rest Days (Day 4)</span><span class="ex-detail" style="color: var(--purple);">Stairclimber (15:00 mins @ Level 4)</span></li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <h3>Abs 1 &amp; Abs 2 Protocols</h3>
+          <div style="margin-bottom: 14px;">
+            <strong style="color: var(--amber); display: block; font-size: 0.95rem; margin-bottom: 6px;">Abs 1 (2 sets each on Push Days):</strong>
+            <div class="chip-list">
+              <span class="chip">Ab Wheel: <strong>6x</strong></span>
+              <span class="chip">Push Ups: <strong>8x</strong></span>
+              <span class="chip">Decline Sit-Ups: <strong>10 lb (6-10x)</strong></span>
+              <span class="chip">Push Ups: <strong>8x</strong></span>
+              <span class="chip">Planks: <strong>45s, 60s</strong></span>
+            </div>
+          </div>
+          <div>
+            <strong style="color: var(--green); display: block; font-size: 0.95rem; margin-bottom: 6px;">Abs 2 (3 sets each on Leg Days):</strong>
+            <div class="chip-list">
+              <span class="chip">Sit-Ups: <strong>15 lb (15x)</strong></span>
+              <span class="chip">Side Planks: <strong>30s, 30s, 30s</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <div class="info-card">
+          <h3>Current Rotation Schedule (11/6 – 11/16)</h3>
+          <ul class="exercise-list" style="padding: 0;">
+            <li><span class="ex-title">Fri 11/6</span><span class="ex-detail">Push 2 + Abs 1</span></li>
+            <li><span class="ex-title">Sat 11/7</span><span class="ex-detail">Pull + Stairclimber 12m</span></li>
+            <li><span class="ex-title">Sun 11/8</span><span class="ex-detail">Legs 1 + Abs 2</span></li>
+            <li><span class="ex-title">Mon 11/9</span><span class="ex-detail">Rest + Stairclimber 15m</span></li>
+            <li><span class="ex-title">Tue 11/10 (Today)</span><span class="ex-detail" style="color: var(--green); font-weight: 800;">Push 1 + Abs 1</span></li>
+            <li><span class="ex-title">Wed 11/11</span><span class="ex-detail">Pull + Stairclimber 12m</span></li>
+            <li><span class="ex-title">Thu 11/12</span><span class="ex-detail">Legs 2 (Hinge Trial) + Abs 2</span></li>
+            <li><span class="ex-title">Fri 11/13</span><span class="ex-detail">Rest + Stairclimber 15m</span></li>
+            <li><span class="ex-title">Sat 11/14</span><span class="ex-detail">Push 2 + Abs 1</span></li>
+            <li><span class="ex-title">Sun 11/15</span><span class="ex-detail">Pull + Stairclimber 12m</span></li>
+            <li><span class="ex-title">Mon 11/16</span><span class="ex-detail">Legs 1 + Abs 2</span></li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <h3>Walking Calorie Burn Scale</h3>
+          <div class="pin-grid" style="grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));">
+            <div class="pin-box"><span>2,000 steps</span><strong>95 cals</strong><small style="color: var(--muted); display: block; font-size: 0.72rem;">20 mins</small></div>
+            <div class="pin-box"><span>4,000 steps</span><strong>190 cals</strong><small style="color: var(--muted); display: block; font-size: 0.72rem;">40 mins</small></div>
+            <div class="pin-box"><span>6,000 steps</span><strong>285 cals</strong><small style="color: var(--muted); display: block; font-size: 0.72rem;">1 hour</small></div>
+            <div class="pin-box"><span>8,000 steps</span><strong>380 cals</strong><small style="color: var(--muted); display: block; font-size: 0.72rem;">1 hr 20m</small></div>
+            <div class="pin-box"><span>10,000 steps</span><strong>475 cals</strong><small style="color: var(--muted); display: block; font-size: 0.72rem;">1 hr 40m</small></div>
+            <div class="pin-box"><span>12,000 steps</span><strong>570 cals</strong><small style="color: var(--muted); display: block; font-size: 0.72rem;">2 hours</small></div>
+            <div class="pin-box"><span>14,000 steps</span><strong>665 cals</strong><small style="color: var(--muted); display: block; font-size: 0.72rem;">2 hr 20m</small></div>
+            <div class="pin-box"><span>16,000 steps</span><strong>760 cals</strong><small style="color: var(--muted); display: block; font-size: 0.72rem;">2 hr 40m</small></div>
+            <div class="pin-box"><span>18,000 steps</span><strong>855 cals</strong><small style="color: var(--muted); display: block; font-size: 0.72rem;">3 hours</small></div>
+            <div class="pin-box"><span>20,000 steps</span><strong>950 cals</strong><small style="color: var(--muted); display: block; font-size: 0.72rem;">3 hr 20m</small></div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- TAB 1: ALL LIFTS PROGRESSION -->
@@ -745,6 +817,7 @@
         color: "#38bdf8",
         assisted: false,
         unit: "lbs",
+        repsNote: "4 sets, 6-10x reps (2-3m rest)",
         why: "<strong>Why it matters:</strong> Your primary upper-body pressing benchmark (replaces barbell bench with fuller range of motion and shoulder safety).",
         pointsJuly: [
           { label: "Jul 7", val: 40 },
@@ -761,6 +834,7 @@
         color: "#34d399",
         assisted: false,
         unit: "lbs",
+        repsNote: "4 sets, 6-10x reps (2-3m rest)",
         why: "<strong>Why it matters:</strong> Your true squat benchmark. Back-supported so lower-back fatigue never limits true quad and glute overload.",
         pointsJuly: [
           { label: "Jul 7", val: 135 },
@@ -777,6 +851,7 @@
         color: "#a78bfa",
         assisted: false,
         unit: "lbs",
+        repsNote: "4 sets, 6-10x reps (2-3m rest)",
         why: "<strong>Why it matters:</strong> Best indicator of raw lower-body force output (+50 lbs gained since July).",
         pointsJuly: [
           { label: "Jul 7", val: 150 },
@@ -793,6 +868,7 @@
         color: "#fbbf24",
         assisted: true,
         unit: "lbs assist",
+        repsNote: "3 sets, 6-10x reps (2-3m rest)",
         why: "<strong>Why it matters:</strong> Gold-standard upper-back compound. Dropping assistance toward 0 lbs = unassisted bodyweight pull-ups.",
         pointsJuly: [
           { label: "Jul 7", val: 70 },
@@ -809,6 +885,7 @@
         color: "#fb7185",
         assisted: true,
         unit: "lbs assist",
+        repsNote: "3 sets, 6-8x reps (2m rest)",
         why: "<strong>Why it matters:</strong> The upper-body squat. Down to just 15 lbs assistance (+25 lbs real strength gained) — almost unassisted.",
         pointsJuly: [
           { label: "Jul 7", val: 40 },
@@ -825,6 +902,7 @@
         color: "#60a5fa",
         assisted: false,
         unit: "lbs",
+        repsNote: "3 sets, 6-10x reps (2-3m rest)",
         why: "<strong>Why it matters:</strong> Core overhead & upper-clavicular pressing strength (+33% increase from 30 lbs to 40 lbs).",
         pointsJuly: [
           { label: "Jul 7", val: 30 },
@@ -846,21 +924,27 @@
       exercises: [
         { key: "bodyweight", name: "Bodyweight", julyVal: 175, julyText: "175 lbs (Peaked 187)", novVal: 183, currVal: 182.6, unit: "lbs", sets: "Started 175 lbs -> peaked 187 lbs -> currently 182.6 lbs (Morning weigh-in)", assisted: false, isBodyweight: true },
         { key: "push_ups", name: "Push-Ups", julyVal: 8.5, julyText: "8.5 reps (7-10)", novVal: 25, currVal: 25, unit: "reps", sets: "1 set, 8x warmup / 25 max", assisted: false },
-        { key: "dumbbell_press", name: "Dumbbell Press", julyVal: 40, novVal: 55, currVal: 55, unit: "lbs", sets: "4 sets, 6-10x, 2-3m rest", assisted: false },
-        { key: "dips_assisted", name: "Assisted Dips", julyVal: 40, novVal: 15, currVal: 15, unit: "lbs assist", sets: "3 sets, 6-8x, 2m rest (lower = stronger)", assisted: true },
+        { key: "dumbbell_press", name: "Dumbbell Press", julyVal: 40, novVal: 55, currVal: 55, unit: "lbs",
+        repsNote: "4 sets, 6-10x reps (2-3m rest)", sets: "4 sets, 6-10x, 2-3m rest", assisted: false },
+        { key: "dips_assisted", name: "Assisted Dips", julyVal: 40, novVal: 15, currVal: 15, unit: "lbs assist",
+        repsNote: "3 sets, 6-8x reps (2m rest)", sets: "3 sets, 6-8x, 2m rest (lower = stronger)", assisted: true },
         { key: "incline_press", name: "Incline Press", julyVal: 30, novVal: 40, currVal: 40, unit: "lbs", sets: "3 sets, 6-10x, 2-3m rest", assisted: false },
-        { key: "shoulder_press", name: "Shoulder Press", julyVal: 30, novVal: 40, currVal: 40, unit: "lbs", sets: "3 sets, 6-10x, 2-3m rest", assisted: false },
+        { key: "shoulder_press", name: "Shoulder Press", julyVal: 30, novVal: 40, currVal: 40, unit: "lbs",
+        repsNote: "3 sets, 6-10x reps (2-3m rest)", sets: "3 sets, 6-10x, 2-3m rest", assisted: false },
         { key: "lat_raise_machine", name: "Lat Raise Machine", julyVal: null, novVal: 70, currVal: 70, unit: "lbs", sets: "3 sets, 8-12x, 60-90s rest", assisted: false },
         { key: "single_arm_cable_pushdown", name: "Single Arm Cable Pushdown", julyVal: null, novVal: 30, currVal: 30, unit: "lbs", sets: "3 sets, 8-12x, 45-60s Burnout", assisted: false },
         { key: "shoulder_lat_dumbbell_rotations", name: "Shoulder / Lat DB Rotations", julyVal: null, novVal: 14, currVal: 14, unit: "lbs", sets: "2 sets, 8-12x, 45-60s Burnout", assisted: false },
-        { key: "pull_ups_assisted", name: "Assisted Pull-Ups", julyVal: 70, novVal: 45, currVal: 45, unit: "lbs assist", sets: "3 sets, 6-10x, 2-3m rest (lower = stronger)", assisted: true },
+        { key: "pull_ups_assisted", name: "Assisted Pull-Ups", julyVal: 70, novVal: 45, currVal: 45, unit: "lbs assist",
+        repsNote: "3 sets, 6-10x reps (2-3m rest)", sets: "3 sets, 6-10x, 2-3m rest (lower = stronger)", assisted: true },
         { key: "chin_ups_assisted", name: "Assisted Chin-Ups", julyVal: 50, novVal: 35, currVal: 35, unit: "lbs assist", sets: "3 sets, 6-10x, 2-3m rest (lower = stronger)", assisted: true },
         { key: "seated_close_grip_vbar_row", name: "Seated Close-Grip (V-Bar) Row", julyVal: null, novVal: 115, currVal: 115, unit: "lbs", sets: "3 sets, 6-10x, 2m rest", assisted: false },
         { key: "preacher_curls", name: "Preacher Curls", julyVal: null, novVal: 35, currVal: 35, unit: "lbs", sets: "3 sets, 6-10x, 90s rest", assisted: false },
         { key: "rear_delt_machine", name: "Rear Delt Machine", julyVal: null, novVal: 70, currVal: 70, unit: "lbs", sets: "3 sets, 10-14x, 60-90s Burnout", assisted: false },
         { key: "dumbbell_hammer_curls", name: "Dumbbell / Hammer Curls", julyVal: 22.5, julyText: "22.5 lbs (20-25)", novVal: 30, currVal: 30, unit: "lbs", sets: "5 sets, 8-12x, 90s Burnout", assisted: false },
-        { key: "leg_press", name: "Leg Press", julyVal: 150, novVal: 200, currVal: 200, unit: "lbs", sets: "4 sets, 6-10x, 2-3m rest", assisted: false },
-        { key: "hack_squats", name: "Hack Squats", julyVal: 135, novVal: 155, currVal: 155, unit: "lbs", sets: "4 sets, 6-10x, 2-3m rest", assisted: false },
+        { key: "leg_press", name: "Leg Press", julyVal: 150, novVal: 200, currVal: 200, unit: "lbs",
+        repsNote: "4 sets, 6-10x reps (2-3m rest)", sets: "4 sets, 6-10x, 2-3m rest", assisted: false },
+        { key: "hack_squats", name: "Hack Squats", julyVal: 135, novVal: 155, currVal: 155, unit: "lbs",
+        repsNote: "4 sets, 6-10x reps (2-3m rest)", sets: "4 sets, 6-10x, 2-3m rest", assisted: false },
         { key: "bulgarian_split_squats", name: "Bulgarian Split Squats", julyVal: 15, novVal: 15, currVal: 15, unit: "lbs", sets: "3 sets, 6-8x, 2m rest", assisted: false },
         { key: "hip_thrust_machine", name: "Hip Thrust Machine", julyVal: 10, novVal: 10, currVal: 10, unit: "lbs", sets: "3 sets, 8-12x, 60-90s rest", assisted: false },
         { key: "leg_curls", name: "Leg Curls", julyVal: 60, novVal: 75, currVal: 75, unit: "lbs", sets: "3 sets, 10-14x, 90s rest (Pins: F2/M1/T4-5)", assisted: false },
@@ -1070,6 +1154,11 @@
               <span>Current</span>
               <strong>${currVal} ${spec.unit}</strong>
             </div>
+          </div>
+
+          <div style="background: rgba(56, 189, 248, 0.08); border: 1px solid rgba(56, 189, 248, 0.22); border-radius: 8px; padding: 7px 12px; display: flex; justify-content: space-between; align-items: center; font-size: 0.84rem;">
+            <span style="color: var(--muted); font-weight: 600;">Target Reps / Sets:</span>
+            <strong style="color: var(--accent); font-weight: 700;">${spec.repsNote || (exItem ? exItem.sets : '')}</strong>
           </div>
 
           <div class="core-why">${spec.why}</div>
