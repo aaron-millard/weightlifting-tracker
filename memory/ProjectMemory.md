@@ -11,10 +11,10 @@ Last Updated: 2026-11-08
 - Stairclimber Progression Split:
   - Day 2 (Pull Day): `12:00 mins` at Level 4.
   - Day 4 (Rest / Active Recovery Day): `15:00 mins` at Level 4 (+3 mins vs Nov 8 start, +7 mins vs July start).
-- Idea-Dump Rule Updated: Telegram bot replies `Okay.` followed by `Update Summary:` in the simplest possible format. Never outputs raw JSON update blocks to user. Agent granted standing permission to update MasterRules dynamically.
+- Idea-Dump Rule Updated: Telegram bot replies `Roger Roger.` followed by `Update Summary:` in the simplest possible format. Never outputs raw JSON update blocks to user. Agent granted standing permission to update MasterRules dynamically.
 - Strict Project Boundary: This chat and workspace are strictly dedicated to `weightlifting-tracker` only. No cross-project context or references.
 - Live 24/7 Cloud Dashboard: `https://macrodave.onrender.com/lifting` (with live JSON data endpoint `https://macrodave.onrender.com/lifting-data.json`) so the dashboard is always accessible even when the PC is closed, and automatically reflects any workouts logged via `@WeightliftingTracker_Bot`.
-- Follows the exact same architecture, communication rules (ultra-short, zero fluff, no markdown asterisks), `Okay.` Idea-Dump Mode, and 24/7 Render multi-bot hosting methodology as `diet-macro-assistant` and `hunting-wabbits`.
+- Follows the exact same architecture, communication rules (ultra-short, zero fluff, no markdown asterisks), `Roger Roger.` Idea-Dump Mode, and 24/7 Render multi-bot hosting methodology as `diet-macro-assistant` and `hunting-wabbits`.
 
 ## 2. Key Progression Highlights (July 2026 Baseline -> Nov 2026 Current)
 - Push-Ups: 8.5 reps (7-10) -> 25 reps (+16.5 reps)

@@ -22,15 +22,19 @@
    - Explicit "Idea Dump" Trigger Rule:
      - Whenever Aaron includes or starts his message with "Idea dump" (case-insensitive), treat it strictly as an idea dump.
      - The bot MUST reply strictly in this two-part format:
-       Okay.
+       Roger Roger.
 
        Update Summary:
        - [Ultra-concise 1-2 bullet summary of what was updated/logged in simplest possible format]
-     - Default Mode (Questions / Lookups): If Aaron does NOT say "Idea dump", treat the message normally as a question, workout lookup, equipment swap inquiry, or discussion, and answer directly without the Okay/Summary header.
+     - Default Mode (Questions / Lookups): If Aaron does NOT say "Idea dump", treat the message normally as a question, workout lookup, equipment swap inquiry, or discussion, and answer directly without the Roger Roger/Summary header.
    - NEVER dump raw JSON code blocks or internal system syntax to Aaron in Telegram chat. All JSON mutations (`json_update`) must be parsed and stripped internally.
    - Whenever Aaron sends an image or screenshot with no text/caption included, immediately reply `I need more context.` while keeping the image in conversation memory.
 4. Continuous Master Rules Maintenance:
    - The agent has full authority to update `rules/MasterRules.md` dynamically as new preferences, workout tweaks, and communication rules arrive.
+
+4. Standing Response Affirmation Rule:
+   - For any instruction, rule, or request where Aaron asks the agent to reply "Okay", "OK", or "ok" (such as but not limited to Telegram idea dumps), the agent must ALWAYS reply with "Roger Roger." instead.
+   - Whenever Aaron asks to reply just ok or okay in any context, always respond with "Roger Roger.".
 
 ## 4. Core Domain & Tracking Rules
 1. Assisted Exercise Inversion Rule:

@@ -1,3 +1,8 @@
+## 2026-11-10 — Universal Roger Roger Affirmation Rule
+- Replaced "Okay" / "Okay." with "Roger Roger." across all rules and bot prompts.
+- Telegram idea dumps now acknowledge with `Roger Roger.` followed by `Update Summary:`.
+- Standing rule added: Whenever Aaron asks to reply "OK" or "Okay", always respond with "Roger Roger." across this chat and the Telegram bot.
+
 # Decision & Session Log — Weightlifting Tracker
 
 ## 2026-11-09 — Standardized Naming Convention to weightlifting-tracker
