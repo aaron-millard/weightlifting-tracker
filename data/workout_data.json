@@ -115,12 +115,6 @@
       "unit": "lbs",
       "notes": "Bodyweight starting"
     },
-    "stairclimber": {
-      "value": 8.0,
-      "unit": "minutes",
-      "level": 4,
-      "notes": "Level 4 for 8 mins"
-    },
     "bodyweight": {
       "value": 175.0,
       "unit": "lbs",
@@ -474,10 +468,6 @@
       "incline": "3.0%",
       "speed": "2.9mph",
       "duration": "30m"
-    },
-    "stairclimber": {
-      "level": 4,
-      "duration": "12:00"
     },
     "bodyweight": {
       "value": 182.6,

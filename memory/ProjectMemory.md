@@ -77,3 +77,10 @@ Last Updated: 2026-11-08
 - Live 24/7 Cloud Dashboard: `https://macrodave.onrender.com/weightlifting-tracker` (live data: `/weightlifting-tracker-data.json`)
 - Encrypted Vault: `bot/weightlifting_tracker_vault.json` (synced via `bot/sync_to_render.py` using PBKDF2-HMAC-SHA256 keyed by `GEMINI_API_KEY`)
 - Persistent Cloud State: Stored in Telegram's cloud via `setMyCommands` (`all_chat_administrators`, `language_code: "eo"`) so Render restarts never lose state.
+
+## 8. Master Standardization & Architecture (Weekend Review Ready)
+- Single Definitive Source of Truth: `data/workout_data.json` is the sole canonical database for routine split, weights, rep targets, pin settings, and history.
+- Offline Dashboard Sync: `dashboard.html` fetches `/weightlifting-tracker-data.json` when served, with embedded fallback for local `file://` inspection.
+- Numbered Action Command System: Enabled via `.agents/rules/workspace.md` and `rules/MasterRules.md` ([1] to [7]).
+- Archive Directory (`archive/`): Contains superseded pre-cleanup datasets, historical snapshots, and redundant requirement files moved out of the active working tree.
+- Two-Beat Confirmation Protocol: All pending code/file modifications stage in Staging until explicit approval via "go", "execute", or "3".

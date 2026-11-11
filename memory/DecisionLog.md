@@ -1,3 +1,14 @@
+## 2026-11-11 — Master Standardization, Action Command System & Workspace Cleanup
+- Pinned permanent workspace rules into `.agents/rules/workspace.md` for continuous turn-by-turn injection:
+  - Two-Beat Confirmation Rule (Staging gate + wait for "go", "execute", or "3").
+  - Heavy Lifting upon approval.
+  - Continuous Error Logging to `memory/ErrorLog.md`.
+  - No Asterisk Clutter (plain text, dashes, explicit double line breaks).
+  - Numbered Action Command System ([1] through [7]).
+- Cleaned up sprawl: Moved duplicate `bot/requirements.txt` and legacy database backup into `archive/`.
+- Cleaned legacy singular `stairclimber` keys from `workout_data.json` to keep split keys canonical.
+- Updated `rules/MasterRules.md`, `memory/ProjectMemory.md`, `memory/ErrorLog.md`, and `TECHNICAL_BLUEPRINT.md`.
+
 ## 2026-11-10 — Backlog Updated
 - Removed 'Enhanced Mobile Web UI' item from Backlog per Aaron's direction.
 

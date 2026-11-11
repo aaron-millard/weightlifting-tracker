@@ -1,0 +1,1020 @@
+{
+  "start_date": "2026-07-07",
+  "official_tracking_start_date": "2026-11-08",
+  "notes": "Started working out July 7, 2026 (175 lbs bodyweight -> peaked 187 lbs -> 183 lbs on Nov 8, 2026 when official tracking began).",
+  "bodyweight": {
+    "july_2026_start": 175.0,
+    "peak_bulk": 187.0,
+    "nov_8_2026_start": 183.0,
+    "current": 182.6,
+    "unit": "lbs",
+    "history": [
+      {
+        "date": "2026-07-07",
+        "weight": 175.0,
+        "notes": "Starting bodyweight"
+      },
+      {
+        "date": "2026-10-01",
+        "weight": 187.0,
+        "notes": "Peak weight (+12 lbs from start)"
+      },
+      {
+        "date": "2026-11-08",
+        "weight": 183.0,
+        "notes": "Official tracking start (-4 lbs from peak, +8 lbs from July start)"
+      },
+      {
+        "date": "2026-11-09",
+        "weight": 182.6,
+        "notes": "Morning weigh-in (-4.4 lbs from peak 187, +7.6 lbs from July start)"
+      }
+    ]
+  },
+  "baselines_july_2026": {
+    "push_ups": {
+      "value": 8.5,
+      "unit": "reps",
+      "notes": "7-10 bodyweight push-ups"
+    },
+    "dumbbell_press": {
+      "value": 40.0,
+      "unit": "lbs",
+      "notes": "Dumbbell press starting weight"
+    },
+    "dips_assisted": {
+      "value": 40.0,
+      "unit": "lbs",
+      "assisted": true,
+      "notes": "40 lbs assistance weight (lower is stronger)"
+    },
+    "incline_press": {
+      "value": 30.0,
+      "unit": "lbs",
+      "notes": "Incline press starting weight"
+    },
+    "shoulder_press": {
+      "value": 30.0,
+      "unit": "lbs",
+      "notes": "Shoulder press starting weight"
+    },
+    "pull_ups_assisted": {
+      "value": 70.0,
+      "unit": "lbs",
+      "assisted": true,
+      "notes": "70 lbs assistance weight (lower is stronger)"
+    },
+    "chin_ups_assisted": {
+      "value": 50.0,
+      "unit": "lbs",
+      "assisted": true,
+      "notes": "50 lbs assistance weight (lower is stronger)"
+    },
+    "dumbbell_curls": {
+      "value": 22.5,
+      "unit": "lbs",
+      "notes": "20-25 lbs starting weight"
+    },
+    "hack_squats": {
+      "value": 135.0,
+      "unit": "lbs",
+      "notes": "Started recently around 135 lbs"
+    },
+    "leg_press": {
+      "value": 150.0,
+      "unit": "lbs",
+      "notes": "Leg press starting weight"
+    },
+    "bulgarian_split_squats": {
+      "value": 15.0,
+      "unit": "lbs",
+      "notes": "Started recently at 15 lbs"
+    },
+    "hip_thrust_machine": {
+      "value": 10.0,
+      "unit": "lbs",
+      "notes": "Started recently at 10 lbs"
+    },
+    "leg_curls": {
+      "value": 60.0,
+      "unit": "lbs",
+      "notes": "Leg curls starting weight"
+    },
+    "leg_extensions": {
+      "value": 120.0,
+      "unit": "lbs",
+      "notes": "Leg extension starting weight"
+    },
+    "decline_sit_ups": {
+      "value": 0.0,
+      "unit": "lbs",
+      "notes": "Bodyweight starting"
+    },
+    "sit_ups": {
+      "value": 0.0,
+      "unit": "lbs",
+      "notes": "Bodyweight starting"
+    },
+    "stairclimber": {
+      "value": 8.0,
+      "unit": "minutes",
+      "level": 4,
+      "notes": "Level 4 for 8 mins"
+    },
+    "bodyweight": {
+      "value": 175.0,
+      "unit": "lbs",
+      "notes": "Starting bodyweight (peaked at 187 lbs)"
+    },
+    "stairclimber_pull": {
+      "value": 8.0,
+      "unit": "minutes",
+      "level": 4,
+      "routine_sets": "Day 2 Pull",
+      "notes": "Baseline 8 mins at Level 4"
+    },
+    "stairclimber_rest": {
+      "value": 8.0,
+      "unit": "minutes",
+      "level": 4,
+      "routine_sets": "Day 4 Rest",
+      "notes": "Baseline 8 mins at Level 4"
+    }
+  },
+  "baselines_nov_8_2026": {
+    "push_ups": {
+      "value": 25.0,
+      "unit": "reps",
+      "routine_sets": "1 set, 8x, 60s"
+    },
+    "dumbbell_press": {
+      "value": 55.0,
+      "unit": "lbs",
+      "routine_sets": "4 sets, 6-10x, 2-3m"
+    },
+    "dips_assisted": {
+      "value": 15.0,
+      "unit": "lbs",
+      "assisted": true,
+      "routine_sets": "3 sets, 6-8x, 2m"
+    },
+    "incline_press": {
+      "value": 40.0,
+      "unit": "lbs",
+      "routine_sets": "3 sets, 6-10x, 2-3m"
+    },
+    "shoulder_press": {
+      "value": 40.0,
+      "unit": "lbs",
+      "routine_sets": "3 sets, 6-10x, 2-3m"
+    },
+    "lat_raise_machine": {
+      "value": 70.0,
+      "unit": "lbs",
+      "routine_sets": "3 sets, 8-12x, 60-90s"
+    },
+    "single_arm_cable_pushdown": {
+      "value": 30.0,
+      "unit": "lbs",
+      "routine_sets": "3 sets, 8-12x, 45-60s Burnout"
+    },
+    "shoulder_lat_dumbbell_rotations": {
+      "value": 14.0,
+      "unit": "lbs",
+      "routine_sets": "2 sets, 8-12x, 45-60s Burnout"
+    },
+    "decline_perfect_incline_burnout": {
+      "value": 0.0,
+      "unit": "bodyweight",
+      "routine_sets": "2 rounds, no rest between 3 types, 90s between rounds"
+    },
+    "pull_ups_assisted_warmup": {
+      "value": 95.0,
+      "unit": "lbs",
+      "assisted": true,
+      "routine_sets": "1 Lightweight Warm Up Pull-Up"
+    },
+    "pull_ups_assisted": {
+      "value": 45.0,
+      "unit": "lbs",
+      "assisted": true,
+      "routine_sets": "3 sets, 6-10x, 2-3m"
+    },
+    "chin_ups_assisted": {
+      "value": 35.0,
+      "unit": "lbs",
+      "assisted": true,
+      "routine_sets": "3 sets, 6-10x, 2-3m"
+    },
+    "seated_close_grip_vbar_row": {
+      "value": 115.0,
+      "unit": "lbs",
+      "routine_sets": "3 sets, 6-10x, 2m"
+    },
+    "preacher_curls": {
+      "value": 35.0,
+      "unit": "lbs",
+      "routine_sets": "3 sets, 6-10x, 90s"
+    },
+    "rear_delt_machine": {
+      "value": 70.0,
+      "unit": "lbs",
+      "routine_sets": "3 sets, 10-14x, 60-90s Burnout"
+    },
+    "dumbbell_hammer_curls": {
+      "value": 30.0,
+      "unit": "lbs",
+      "routine_sets": "5 sets, 8-12x, 90s Burnout"
+    },
+    "hack_squats": {
+      "value": 155.0,
+      "unit": "lbs",
+      "routine_sets": "4 sets, 6-10x, 2-3m"
+    },
+    "leg_press": {
+      "value": 200.0,
+      "unit": "lbs",
+      "routine_sets": "4 sets, 6-10x, 2-3m"
+    },
+    "bulgarian_split_squats": {
+      "value": 15.0,
+      "unit": "lbs",
+      "routine_sets": "3 sets, 6-8x, 2m"
+    },
+    "hip_thrust_machine": {
+      "value": 10.0,
+      "unit": "lbs",
+      "routine_sets": "3 sets, 8-12x, 60-90s"
+    },
+    "leg_curls": {
+      "value": 75.0,
+      "unit": "lbs",
+      "routine_sets": "3 sets, 10-14x, 90s"
+    },
+    "hip_abduction_push": {
+      "value": 120.0,
+      "unit": "lbs",
+      "routine_sets": "4 sets, 15-20x, 45s"
+    },
+    "leg_extensions": {
+      "value": 140.0,
+      "unit": "lbs",
+      "routine_sets": "3 sets, 10-14x, 90s"
+    },
+    "standing_calf": {
+      "value": 60.0,
+      "unit": "lbs",
+      "routine_sets": "4 sets, 15-20x, 60s"
+    },
+    "ab_wheel": {
+      "value": 0.0,
+      "unit": "lbs",
+      "routine_sets": "6x"
+    },
+    "decline_sit_ups": {
+      "value": 15.0,
+      "unit": "lbs",
+      "routine_sets": "15x"
+    },
+    "planks": {
+      "value": 60.0,
+      "unit": "seconds",
+      "routine_sets": "60s, 45s, 45s"
+    },
+    "sit_ups": {
+      "value": 15.0,
+      "unit": "lbs",
+      "routine_sets": "15x"
+    },
+    "side_planks": {
+      "value": 30.0,
+      "unit": "seconds",
+      "routine_sets": "30s, 30s, 30s"
+    },
+    "walking": {
+      "incline": "3.0%",
+      "speed": "2.9mph",
+      "duration": "30m"
+    },
+    "stairclimber": {
+      "level": 4,
+      "duration": "12:00"
+    },
+    "bodyweight": {
+      "value": 183.0,
+      "unit": "lbs",
+      "notes": "Bodyweight on Nov 8, 2026 official tracking start"
+    },
+    "stairclimber_pull": {
+      "value": 12.0,
+      "unit": "minutes",
+      "level": 4,
+      "routine_sets": "Day 2 Pull",
+      "notes": "Nov 8 tracking start 12 mins at Level 4"
+    },
+    "stairclimber_rest": {
+      "value": 12.0,
+      "unit": "minutes",
+      "level": 4,
+      "routine_sets": "Day 4 Rest",
+      "notes": "Nov 8 tracking start 12 mins at Level 4"
+    }
+  },
+  "current_targets_and_maxes": {
+    "push_ups": {
+      "value": 25.0,
+      "unit": "reps",
+      "routine_sets": "1 set, 8x, 60s"
+    },
+    "dumbbell_press": {
+      "value": 55.0,
+      "unit": "lbs",
+      "routine_sets": "4 sets, 6-10x, 2-3m"
+    },
+    "dips_assisted": {
+      "value": 15.0,
+      "unit": "lbs",
+      "assisted": true,
+      "routine_sets": "3 sets, 6-8x, 2m"
+    },
+    "incline_press": {
+      "value": 40.0,
+      "unit": "lbs",
+      "routine_sets": "3 sets, 6-10x, 2-3m"
+    },
+    "shoulder_press": {
+      "value": 40.0,
+      "unit": "lbs",
+      "routine_sets": "3 sets, 6-10x, 2-3m"
+    },
+    "lat_raise_machine": {
+      "value": 60.0,
+      "unit": "lbs",
+      "routine_sets": "3 sets, 8-12x, 60-90s"
+    },
+    "single_arm_cable_pushdown": {
+      "value": 20.0,
+      "unit": "lbs",
+      "routine_sets": "4 sets, 8-12x, 45-60s Burnout"
+    },
+    "shoulder_lat_dumbbell_rotations": {
+      "value": 14.0,
+      "unit": "lbs",
+      "routine_sets": "2 sets, 8-12x, 45-60s Burnout"
+    },
+    "decline_perfect_incline_burnout": {
+      "value": 0.0,
+      "unit": "bodyweight",
+      "routine_sets": "2 rounds, no rest between 3 types, 90s between rounds"
+    },
+    "pull_ups_assisted_warmup": {
+      "value": 95.0,
+      "unit": "lbs",
+      "assisted": true,
+      "routine_sets": "1 Lightweight Warm Up Pull-Up"
+    },
+    "pull_ups_assisted": {
+      "value": 45.0,
+      "unit": "lbs",
+      "assisted": true,
+      "routine_sets": "3 sets, 6-10x, 2-3m"
+    },
+    "chin_ups_assisted": {
+      "value": 35.0,
+      "unit": "lbs",
+      "assisted": true,
+      "routine_sets": "3 sets, 6-10x, 2-3m"
+    },
+    "seated_close_grip_vbar_row": {
+      "value": 115.0,
+      "unit": "lbs",
+      "routine_sets": "3 sets, 6-10x, 2m"
+    },
+    "preacher_curls": {
+      "value": 35.0,
+      "unit": "lbs",
+      "routine_sets": "3 sets, 6-10x, 90s"
+    },
+    "rear_delt_machine": {
+      "value": 70.0,
+      "unit": "lbs",
+      "routine_sets": "3 sets, 10-14x, 60-90s Burnout"
+    },
+    "dumbbell_hammer_curls": {
+      "value": 30.0,
+      "unit": "lbs",
+      "routine_sets": "5 sets, 8-12x, 90s Burnout"
+    },
+    "hack_squats": {
+      "value": 155.0,
+      "unit": "lbs",
+      "routine_sets": "4 sets, 6-10x, 2-3m"
+    },
+    "leg_press": {
+      "value": 200.0,
+      "unit": "lbs",
+      "routine_sets": "4 sets, 6-10x, 2-3m"
+    },
+    "bulgarian_split_squats": {
+      "value": 15.0,
+      "unit": "lbs",
+      "routine_sets": "3 sets, 6-8x, 2m"
+    },
+    "hip_thrust_machine": {
+      "value": 10.0,
+      "unit": "lbs",
+      "routine_sets": "3 sets, 8-12x, 60-90s"
+    },
+    "leg_curls": {
+      "value": 75.0,
+      "unit": "lbs",
+      "routine_sets": "3 sets, 10-14x, 90s"
+    },
+    "hip_abduction_push": {
+      "value": 120.0,
+      "unit": "lbs",
+      "routine_sets": "4 sets, 15-20x, 45s"
+    },
+    "leg_extensions": {
+      "value": 140.0,
+      "unit": "lbs",
+      "routine_sets": "3 sets, 10-14x, 90s"
+    },
+    "standing_calf": {
+      "value": 60.0,
+      "unit": "lbs",
+      "routine_sets": "4 sets, 15-20x, 60s"
+    },
+    "ab_wheel": {
+      "value": 0.0,
+      "unit": "lbs",
+      "routine_sets": "6x"
+    },
+    "decline_sit_ups": {
+      "value": 10.0,
+      "unit": "lbs",
+      "routine_sets": "2 sets, 6-10x"
+    },
+    "planks": {
+      "value": 60.0,
+      "unit": "seconds",
+      "routine_sets": "60s, 45s, 45s"
+    },
+    "sit_ups": {
+      "value": 15.0,
+      "unit": "lbs",
+      "routine_sets": "15x"
+    },
+    "side_planks": {
+      "value": 30.0,
+      "unit": "seconds",
+      "routine_sets": "30s, 30s, 30s"
+    },
+    "walking": {
+      "incline": "3.0%",
+      "speed": "2.9mph",
+      "duration": "30m"
+    },
+    "stairclimber": {
+      "level": 4,
+      "duration": "12:00"
+    },
+    "bodyweight": {
+      "value": 182.6,
+      "unit": "lbs",
+      "notes": "Bodyweight logged on Nov 9, 2026"
+    },
+    "stairclimber_pull": {
+      "value": 12.0,
+      "level": 4,
+      "duration": "12:00",
+      "unit": "minutes",
+      "routine_sets": "Day 2 Pull",
+      "notes": "12 mins at Level 4 on Pull Day"
+    },
+    "stairclimber_rest": {
+      "value": 15.0,
+      "level": 4,
+      "duration": "15:00",
+      "unit": "minutes",
+      "routine_sets": "Day 4 Rest",
+      "notes": "15 mins at Level 4 on Rest Day (+3 mins vs Nov 8 start)"
+    }
+  },
+  "machine_settings": {
+    "leg_curls": {
+      "front": 2,
+      "medium": 1,
+      "top": "4-5"
+    },
+    "leg_extension": {
+      "back": 5,
+      "front": 2
+    }
+  },
+  "active_routines": {
+    "day_1_push": [
+      {
+        "name": "Push Ups",
+        "weight": "Bodyweight",
+        "reps": "8x",
+        "sets": "1 set",
+        "rest": "60s"
+      },
+      {
+        "name": "Dumbbell Press",
+        "weight": "55 lb",
+        "reps": "6-10x",
+        "sets": "4 sets",
+        "rest": "2-3m"
+      },
+      {
+        "name": "Dips (Assisted)",
+        "weight": "15 lb assist",
+        "reps": "6-8x",
+        "sets": "3 sets",
+        "rest": "2m"
+      },
+      {
+        "name": "Incline Press / Shoulder Press",
+        "weight": "40 lb",
+        "reps": "6-10x",
+        "sets": "3 sets",
+        "rest": "2-3m"
+      },
+      {
+        "name": "Lat Raise Machine",
+        "weight": "60 lb",
+        "reps": "8-12x",
+        "sets": "3 sets",
+        "rest": "60-90s"
+      },
+      {
+        "name": "Single Arm Cable Pushdown",
+        "weight": "20 lb",
+        "reps": "8-12x",
+        "sets": "4 sets",
+        "rest": "45-60s Burnout"
+      },
+      {
+        "name": "Shoulder / Lat Dumbbell Rotations",
+        "weight": "14 lb",
+        "reps": "8-12x",
+        "sets": "2 sets",
+        "rest": "45-60s Burnout"
+      },
+      {
+        "name": "Abs 1 Routine",
+        "weight": "Core",
+        "reps": "Full circuit",
+        "sets": "2 sets each",
+        "rest": "Post-Push"
+      }
+    ],
+    "day_2_pull": [
+      {
+        "name": "Warm Up Pull-Up",
+        "weight": "95 lb assist",
+        "reps": "Warmup",
+        "sets": "1 set",
+        "rest": "Lightweight"
+      },
+      {
+        "name": "Standard Pull-Ups",
+        "weight": "45 lb assist",
+        "reps": "6-10x",
+        "sets": "3 sets",
+        "rest": "2-3m"
+      },
+      {
+        "name": "Chin-Ups",
+        "weight": "35 lb assist",
+        "reps": "6-10x",
+        "sets": "3 sets",
+        "rest": "2-3m"
+      },
+      {
+        "name": "Seated Close-Grip (V-Bar) Row",
+        "weight": "115 lb",
+        "reps": "6-10x",
+        "sets": "3 sets",
+        "rest": "2m"
+      },
+      {
+        "name": "Preacher Curls",
+        "weight": "35 lb",
+        "reps": "6-10x",
+        "sets": "3 sets",
+        "rest": "90s"
+      },
+      {
+        "name": "Rear Delt Machine",
+        "weight": "70 lb",
+        "reps": "10-14x",
+        "sets": "3 sets",
+        "rest": "60-90s Burnout"
+      },
+      {
+        "name": "Cable Curls",
+        "weight": "Working",
+        "reps": "8-12x",
+        "sets": "3 sets",
+        "rest": "60s"
+      },
+      {
+        "name": "Dumbbell / Hammer Curls",
+        "weight": "30 lb",
+        "reps": "8-12x",
+        "sets": "5 sets",
+        "rest": "90s Burnout"
+      },
+      {
+        "name": "Stairclimber",
+        "weight": "Level 4",
+        "reps": "12:00 mins",
+        "sets": "1 set",
+        "rest": "Cardio Finisher"
+      }
+    ],
+    "day_3_legs": [
+      {
+        "name": "Lightweight Warm Ups",
+        "weight": "105 lb / 120 lb",
+        "reps": "Warmup",
+        "sets": "2 sets",
+        "rest": "Lightweight"
+      },
+      {
+        "name": "Hack Squats / Leg Press",
+        "weight": "155 lb / 200 lb",
+        "reps": "6-10x",
+        "sets": "4 sets",
+        "rest": "2-3m"
+      },
+      {
+        "name": "Bulgarian Split Squats",
+        "weight": "15 lb",
+        "reps": "6-8x",
+        "sets": "3 sets",
+        "rest": "2m"
+      },
+      {
+        "name": "Hip Thrust Machine",
+        "weight": "10 lb",
+        "reps": "8-12x",
+        "sets": "3 sets",
+        "rest": "60-90s"
+      },
+      {
+        "name": "45\u00b0 Hyperextension / Seated Back Ext (Hinge Trial)",
+        "weight": "X lb / BW",
+        "reps": "10-12x",
+        "sets": "3 sets",
+        "rest": "60-90s"
+      },
+      {
+        "name": "Leg Curls (Pins: F2 / M1 / T4-5)",
+        "weight": "75 lb",
+        "reps": "10-14x",
+        "sets": "3 sets",
+        "rest": "90s"
+      },
+      {
+        "name": "Hip Abduction (Push)",
+        "weight": "120 lb",
+        "reps": "15-20x",
+        "sets": "4 sets",
+        "rest": "45s"
+      },
+      {
+        "name": "Leg Extensions (Pins: B5 / F2)",
+        "weight": "140 lb",
+        "reps": "10-14x",
+        "sets": "3 sets",
+        "rest": "90s"
+      },
+      {
+        "name": "Standing Calf",
+        "weight": "60 lb",
+        "reps": "15-20x",
+        "sets": "4 sets",
+        "rest": "60s"
+      },
+      {
+        "name": "Abs 2 Routine",
+        "weight": "Core",
+        "reps": "Full circuit",
+        "sets": "3 sets each",
+        "rest": "Post-Legs"
+      },
+      {
+        "name": "Treadmill Walk",
+        "weight": "3.0% incline @ 2.9mph",
+        "reps": "30 mins",
+        "sets": "1 session",
+        "rest": "Finisher"
+      }
+    ],
+    "day_4_rest": [
+      {
+        "name": "Stairclimber",
+        "weight": "Level 4",
+        "reps": "15:00 mins",
+        "sets": "1 session",
+        "rest": "Cardio"
+      },
+      {
+        "name": "Abs 1 or Abs 2 Option",
+        "weight": "Core",
+        "reps": "Circuits",
+        "sets": "2-3 sets",
+        "rest": "Core Work"
+      },
+      {
+        "name": "Full Stretches (Dynamic & Static)",
+        "weight": "Mobility",
+        "reps": "15 mins",
+        "sets": "Full Body",
+        "rest": "Recovery"
+      }
+    ]
+  },
+  "backup_workouts": {
+    "push": {
+      "chest": [
+        "Chest Press Machine: 75lb",
+        "Smith Machine Flat Bench Press",
+        "Incline Press Machine: 45lb",
+        "Smith Machine Incline Bench Press",
+        "Dumbbell Flys: 35lb",
+        "Fly Machine: 165lb",
+        "Standing Cable Flys (Middle Pulley)"
+      ],
+      "shoulders": [
+        "Front Raises: 17.5lb",
+        "Cable Face Pulls",
+        "Bench Side Raises: 20lb",
+        "Dumbbell Lat Raises: 25lb",
+        "Cable Lateral Raises (Low Pulley)",
+        "Dumbbell Shoulder Press: 35lb",
+        "Shoulder Press Machine (Tight): 70lb",
+        "Shoulder Press Machine (Wide): 70lb",
+        "Smith Machine Overhead Shoulder Press"
+      ],
+      "triceps": [
+        "Incline Bench Ez-Bar Extensions: 60lb",
+        "Lying Down Extensions / Skullcrushers: 60lb",
+        "Dumbbell behind head extensions: 25lb",
+        "Tricep Extension Machine: 125lb",
+        "Overhead Cable Extensions: 35lb",
+        "Rope Pushdowns: 50lb",
+        "Pushdown Machine: 175lb",
+        "Curved Bar Pushdown: 50lb",
+        "Straight Bar Pushdown: 50lb"
+      ]
+    },
+    "pull": {
+      "back": [
+        "Lat Pulldown (Neutral V-Grip or Standard Grip): 105lb",
+        "Seated Row Machine: 120lb (3 sets, 6-10x, 2m)",
+        "Lat Pulldown Machine: 80lb",
+        "T-Grip Cable Rows: 120lb",
+        "Chest Supported Dumbbell Row: 30lb",
+        "Lat Row Machine: 80lb",
+        "Seated Wide-Grip (V-Bar) Row: 90lb",
+        "Cable Pullovers / Straight-Arm Pushdowns: 70lb",
+        "Reverse-Grip (Underhand) Row: 100lb",
+        "W-Grip Cable Rows: 95lb"
+      ],
+      "biceps": [
+        "W-Grip EZ Bar Curls: 60lb",
+        "W-Grip Straight-Bar Curls: 60lb",
+        "Bicep Machine",
+        "Cable Rope Hammer Curls",
+        "Concentration Curls: 25lb",
+        "T-Grip Straight-Bar Curls: 60lb",
+        "T-Grip EZ Bar Curls: 60lb",
+        "Cable Curls"
+      ]
+    },
+    "legs": [
+      "Leg Press (Backup): 150lb (6x)",
+      "Calf Raises: 80lb (15x)",
+      "Glute Bridges: 2 sets, 20x, 45s",
+      "Walking Lunges: 20lb, 3 sets, 5-8x, 2m",
+      "Calf Machine: 150lb",
+      "Hip Abduction (Squeeze): 120lb, 2 sets, 15-20x, 60s",
+      "45? Hyperextension / Back Extension Bench: Bodyweight or 15-25 lb plate/DB (Hinge candidate)",
+      "Seated Back Extension Machine: Pin-select machine (Hinge candidate)"
+    ],
+    "abs_and_stretches": [
+      "Decline Sit-Up",
+      "Side Pulls",
+      "Scrunches",
+      "Reverse Crunches",
+      "Lying Leg Raise to Hip Extension/Thrust",
+      "Bicycle Kicks",
+      "Butterfly Kicks",
+      "Planks",
+      "Dynamic Stretches (Body Weight Squats, Side lunges, Leg swings)",
+      "Static Stretches (Hamstring reach, Butterfly, Glute bridges, Figure-4, Kneeling Hip Flexor, Calves)"
+    ]
+  },
+  "workout_logs": [
+    {
+      "date": "2026-07-07",
+      "type": "baseline",
+      "notes": "Initial starting baseline estimates 4 months ago."
+    },
+    {
+      "date": "2026-11-08",
+      "type": "checkpoint",
+      "notes": "Project initialized with current active routine and weights."
+    },
+    {
+      "date": "2026-11-09",
+      "exercise": "bodyweight",
+      "value": 182.6,
+      "unit": "lbs",
+      "delta_from_baseline": "+7.6 lbs"
+    },
+    {
+      "date": "2026-11-09",
+      "exercise": "stairclimber_rest",
+      "value": 15.0,
+      "unit": "minutes",
+      "delta_from_baseline": "+7 mins vs July start, +3 mins vs Nov 8 start",
+      "notes": "Split stairclimber tracking into Day 2 Pull (12m L4) and Day 4 Rest (15m L4)"
+    }
+  ],
+  "schedule_rotation": {
+    "pairing": {
+      "push": "Abs 1",
+      "pull": "Stairclimber (12:00, L4)",
+      "legs": "Abs 2",
+      "rest": "Stairclimber (15:00, L4)"
+    },
+    "cycle": [
+      {
+        "date": "2026-11-06",
+        "day": "Friday",
+        "workout": "Push 2",
+        "accessory": "Abs 1"
+      },
+      {
+        "date": "2026-11-07",
+        "day": "Saturday",
+        "workout": "Pull",
+        "accessory": "Stairclimber (12m, L4)"
+      },
+      {
+        "date": "2026-11-08",
+        "day": "Sunday",
+        "workout": "Legs 1",
+        "accessory": "Abs 2"
+      },
+      {
+        "date": "2026-11-09",
+        "day": "Monday",
+        "workout": "Rest",
+        "accessory": "Stairclimber (15m, L4)"
+      },
+      {
+        "date": "2026-11-10",
+        "day": "Tuesday",
+        "workout": "Push 1",
+        "accessory": "Abs 1"
+      },
+      {
+        "date": "2026-11-11",
+        "day": "Wednesday",
+        "workout": "Pull",
+        "accessory": "Stairclimber (12m, L4)"
+      },
+      {
+        "date": "2026-11-12",
+        "day": "Thursday",
+        "workout": "Legs 2",
+        "accessory": "Abs 2"
+      },
+      {
+        "date": "2026-11-13",
+        "day": "Friday",
+        "workout": "Rest",
+        "accessory": "Stairclimber (15m, L4)"
+      },
+      {
+        "date": "2026-11-14",
+        "day": "Saturday",
+        "workout": "Push 2",
+        "accessory": "Abs 1"
+      },
+      {
+        "date": "2026-11-15",
+        "day": "Sunday",
+        "workout": "Pull",
+        "accessory": "Stairclimber (12m, L4)"
+      },
+      {
+        "date": "2026-11-16",
+        "day": "Monday",
+        "workout": "Legs 1",
+        "accessory": "Abs 2"
+      }
+    ]
+  },
+  "abs_protocols": {
+    "abs_1": {
+      "sets": "2 sets each",
+      "exercises": [
+        {
+          "name": "Ab Wheel",
+          "reps": "6x"
+        },
+        {
+          "name": "Push Ups",
+          "reps": "8x"
+        },
+        {
+          "name": "Decline Sit-Ups",
+          "weight": "10 lb",
+          "reps": "6-10x"
+        },
+        {
+          "name": "Push Ups",
+          "reps": "8x"
+        },
+        {
+          "name": "Planks",
+          "reps": "45s, 60s"
+        }
+      ]
+    },
+    "abs_2": {
+      "sets": "3 sets each",
+      "exercises": [
+        {
+          "name": "Sit-Ups",
+          "weight": "15 lb",
+          "reps": "15x"
+        },
+        {
+          "name": "Side Planks",
+          "reps": "30s, 30s, 30s"
+        }
+      ]
+    }
+  },
+  "walking_calorie_scale": [
+    {
+      "steps": "2k",
+      "time": "20m",
+      "cals": "95c"
+    },
+    {
+      "steps": "4k",
+      "time": "40m",
+      "cals": "190c"
+    },
+    {
+      "steps": "6k",
+      "time": "1hr",
+      "cals": "285c"
+    },
+    {
+      "steps": "8k",
+      "time": "1hr 20m",
+      "cals": "380c"
+    },
+    {
+      "steps": "10k",
+      "time": "1hr 40m",
+      "cals": "475c"
+    },
+    {
+      "steps": "12k",
+      "time": "2hr",
+      "cals": "570c"
+    },
+    {
+      "steps": "14k",
+      "time": "2hr 20m",
+      "cals": "665c"
+    },
+    {
+      "steps": "16k",
+      "time": "2hr 40m",
+      "cals": "760c"
+    },
+    {
+      "steps": "18k",
+      "time": "3hr",
+      "cals": "855c"
+    },
+    {
+      "steps": "20k",
+      "time": "3hr 20m",
+      "cals": "950c"
+    }
+  ]
+}

@@ -26,8 +26,12 @@ Every project follows a clean, categorized folder structure:
 
 ```text
 project-root/
+├── .agents/
+│   └── rules/
+│       └── workspace.md           # Pinned turn-by-turn injected behavioral guardrails
 ├── rules/
-│   └── MasterRules.md             # Single source of truth for behavior, formatting, and domain rules
+│   └── MasterRules.md             # Comprehensive domain rules, routines, and action commands
+├── archive/                       # Superseded historical files and redundant legacy artifacts
 ├── memory/ (or inventory/)
 │   ├── ProjectMemory.md           # Structured human-readable state / inventory / knowledge base
 │   ├── DecisionLog.md             # Chronological log of updates and decisions

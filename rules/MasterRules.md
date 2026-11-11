@@ -38,6 +38,16 @@
    - For any instruction, rule, or request where Aaron asks the agent to reply "Okay", "OK", or "ok" (such as but not limited to Telegram idea dumps), the agent must ALWAYS reply with "Roger Roger." instead.
    - Whenever Aaron asks to reply just ok or okay in any context, always respond with "Roger Roger.".
 
+## 5. Numbered Action Command System
+Typing the single digit or the trigger phrase executes immediately:
+- [1] pull backlog (or 1): Displays current exploratory ideas and Telegram dumps from memory/ProjectMemory.md.
+- [2] pull staging (or 2): Displays concrete pending changes that are planned, designed, and strictly paused waiting for approval.
+- [3] execute staging (or 3): The official green light. Applies all staged changes across files and configs.
+- [4] sync all (or 4): Multi-level full sync (local files <-> cloud bot/Render <-> git remote <-> live dashboard).
+- [5] pull error log (or 5): Displays the top recurring mistakes and guardrails from memory/ErrorLog.md.
+- [6] status (or 6): Quick 3-bullet summary of project health, active files, and last sync timestamp.
+- [7] list actions (or 7): Displays this numbered menu anytime.
+
 ## 4. Core Domain & Tracking Rules
 1. Assisted Exercise Inversion Rule:
    - For Assisted Dips, Assisted Pull-Ups, and Assisted Chin-Ups, LOWER weight means MORE strength/progress.
