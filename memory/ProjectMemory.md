@@ -47,7 +47,6 @@ Last Updated: 2026-11-08
 ### Backlog (Exploratory Ideas, Brainstorms & Future Consideration)
 - **Day 3 Hinge Selection:** Evaluating 45° Hyperextension Bench vs. Seated Back Extension Machine during next Leg Day trial.
 - **RDL Consideration:** Potential addition of Dumbbell or Barbell Romanian Deadlifts in a future phase when ready to load heavy floor/bench hinges.
-- **Enhanced Mobile Web UI:** Add quick-tap set completion toggles or session timers to `dashboard.html`.
 
 ## 6. Workout Rotation & Accessory Schedule
 - 4-Day Microcycle Pairing:
