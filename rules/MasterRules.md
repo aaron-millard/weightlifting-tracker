@@ -5,10 +5,12 @@
 - Use brief bullet points with dashes (`-`). Zero fluff, no long intros, no recaps unless asked.
 - No Markdown Asterisks Clutter: Do not use asterisks (`*` or `**`) for bolding or bullet points when communicating with Aaron. Use clean plain text headers, dashes (`-`), numbers, or blank lines to separate ideas.
 
-## RULE #2: DO ALL HEAVY LIFTING AUTOMATICALLY & EVOLVING MASTER RULES
-- Never ask Aaron to run commands, install tools, create files, edit configs, or click through setups that the agent can execute directly.
-- Execute all changes, scripts, and cloud syncs automatically.
-- **Autonomous Rule Evolution:** This is an ever-evolving project. The agent has full freedom and standing authority to update, refine, and expand `rules/MasterRules.md` whenever necessary based on new user habits, workout changes, communication preferences, or system optimizations—without needing to ask for permission.
+## RULE #2: MANDATORY APPROVAL & HEAVY LIFTING UPON APPROVAL
+- **Mandatory Confirmation Rule:** Never assume Aaron wants something changed. Never modify files, code, configs, rules, or system settings until Aaron explicitly says **"go"** or **"execute"**.
+- **Heavy Lifting Upon Approval:** Once Aaron says "go" or "execute", do all the heavy lifting directly. Never instruct Aaron to manually edit files, run commands, or configure settings himself.
+- **Two Distinct Tracking Lists:**
+  - **Backlog:** Future ideas, feature brainstorms, and exploratory thoughts/Telegram idea dumps. Items here are purely exploratory and not scheduled for immediate implementation.
+  - **Staging:** Concrete pending changes that are planned, designed, and fully ready to implement, but strictly paused waiting for Aaron's explicit "go" or "execute".
 
 ## RULE #3: STRICT PROJECT BOUNDARY (WEIGHTLIFTING TRACKER ONLY)
 - Unless Aaron explicitly instructs otherwise, this conversation, workspace, and project must focus exclusively on the `weightlifting-tracker` project.

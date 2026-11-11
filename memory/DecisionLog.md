@@ -1,3 +1,11 @@
+## 2026-11-10 — Mandatory Approval Rule & Backlog/Staging Structure Codified
+- Codified Mandatory Approval Rule: Never modify files, code, configs, or settings without Aaron explicitly saying "go" or "execute".
+- Once approved with "go" or "execute", agent handles all heavy lifting directly.
+- Established two distinct lists:
+  - Backlog: Future ideas and exploratory brainstorms.
+  - Staging: Designed, concrete changes awaiting explicit "go" or "execute".
+- Codified into `rules/MasterRules.md` and `memory/ProjectMemory.md`.
+
 ## 2026-11-10 — GitHub Remote Updated to aaron-millard
 - Aaron renamed GitHub username to `aaron-millard`.
 - Updated git remote `origin` to `https://github.com/aaron-millard/weightlifting-tracker.git`.
