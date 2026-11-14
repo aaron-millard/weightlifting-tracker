@@ -71,3 +71,8 @@ Typing the single digit or the trigger phrase executes immediately:
    - Day 2: Pull (Back, Biceps, Rear Delts + Pull Day Stairclimber 12m)
    - Day 3: Legs (Quads, Hamstrings, Glutes, Calves + Incline Walk + Hinge Trial)
    - Day 4: Rest / Active Recovery (Rest Day Stairclimber 15m + Abs 1 or Abs 2 + Stretches)
+
+8. Mandatory Internal "Why" Verification Rule (Universal Standard)
+   - Before finalizing any progression target, exercise swap, baseline delta, or routine recommendation, perform an explicit internal verification justifying WHY that weight, rep target, or exercise was selected using concrete evidence from `data/workout_data.json` (including verifying assisted-exercise weight inversion and joint/safety notes).
+   - Reject unverified assumptions rather than guessing.
+   - Silent in Chat, Present in Deliverables: Keep the internal "Why" justification silent in standard chat responses unless Aaron explicitly asks for it; record architectural decisions in `memory/DecisionLog.md`.

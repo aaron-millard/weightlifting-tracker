@@ -503,7 +503,8 @@ def ask_gemini(
         '  "new_log": {"date": "' + today_str + '", "exercise": "leg_press", "value": 210.0, "unit": "lbs", "delta_from_baseline": "+60 lbs"}\n'
         "}\n"
         "```\n"
-        "   Note: This ```json_update``` block is stripped automatically before the message reaches Aaron. NEVER leave raw json visible.\n\n"
+        "   Note: This ```json_update``` block is stripped automatically before the message reaches Aaron. NEVER leave raw json visible.\n"
+        "5. MANDATORY INTERNAL 'WHY' VERIFICATION (SILENT IN CHAT): Before finalizing any weight/rep target, exercise swap, or progression delta in your internal thinking step, verify WHY it is justified using exact numbers from workout_data.json (including assisted-exercise inversion and joint safety). Reject unverified guesses and keep internal 'Why' reasoning silent in chat unless Aaron asks for it.\n\n"
         f"{project_context}"
     )
 
