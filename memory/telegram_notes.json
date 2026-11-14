@@ -8,9 +8,39 @@
   "rules": [],
   "workout_updates": {
     "bodyweight": {
-      "value": 182.6,
+      "value": 181.0,
       "unit": "lbs",
-      "notes": "Bodyweight logged on Nov 9, 2026"
+      "notes": "Bodyweight logged on Nov 14, 2026"
+    },
+    "lat_raise_machine": {
+      "value": 60.0,
+      "unit": "lbs",
+      "routine_sets": "3 sets, 8-12x, 60-90s"
+    },
+    "single_arm_cable_pushdown": {
+      "value": 20.0,
+      "unit": "lbs",
+      "routine_sets": "3 sets, 8-12x, 45-60s Burnout"
+    },
+    "decline_sit_ups": {
+      "value": 10.0,
+      "unit": "lbs",
+      "routine_sets": "15x"
+    },
+    "seated_close_grip_vbar_row": {
+      "value": 100.0,
+      "unit": "lbs",
+      "routine_sets": "3 sets, 6-10x, 2m"
+    },
+    "rear_delt_machine": {
+      "value": 75.0,
+      "unit": "lbs",
+      "routine_sets": "3 sets, 10-14x, 60-90s Burnout"
+    },
+    "leg_press": {
+      "value": 210.0,
+      "unit": "lbs",
+      "routine_sets": "4 sets, 6-10x, 2-3m"
     }
   },
   "machine_updates": {},
@@ -21,6 +51,62 @@
       "value": 182.6,
       "unit": "lbs",
       "delta_from_baseline": "+7.6 lbs"
+    },
+    {
+      "date": "2026-11-10",
+      "exercise": "lat_raise_machine",
+      "value": 60.0,
+      "unit": "lbs",
+      "delta_from_baseline": "-10 lbs vs Nov 8 start"
+    },
+    {
+      "date": "2026-11-10",
+      "exercise": "single_arm_cable_pushdown",
+      "value": 20.0,
+      "unit": "lbs",
+      "notes": "Updated starting baseline to 20 lbs"
+    },
+    {
+      "date": "2026-11-10",
+      "exercise": "decline_sit_ups",
+      "value": 10.0,
+      "unit": "lbs",
+      "notes": "Updated starting baseline to 10 lbs"
+    },
+    {
+      "date": "2026-11-11",
+      "exercise": "seated_close_grip_vbar_row",
+      "value": 100.0,
+      "unit": "lbs",
+      "notes": "Updated starting baseline to 100 lbs"
+    },
+    {
+      "date": "2026-11-11",
+      "exercise": "rear_delt_machine",
+      "value": 75.0,
+      "unit": "lbs",
+      "delta_from_baseline": "+5 lbs vs Nov 8 start"
+    },
+    {
+      "date": "2026-11-12",
+      "exercise": "bodyweight",
+      "value": 182.2,
+      "unit": "lbs",
+      "delta_from_baseline": "+7.2 lbs"
+    },
+    {
+      "date": "2026-11-14",
+      "exercise": "leg_press",
+      "value": 210.0,
+      "unit": "lbs",
+      "delta_from_baseline": "+60 lbs"
+    },
+    {
+      "date": "2026-11-14",
+      "exercise": "bodyweight",
+      "value": 181.0,
+      "unit": "lbs",
+      "delta_from_baseline": "+6 lbs vs July start, -2 lbs vs Nov 8 start"
     }
   ]
 }

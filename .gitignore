@@ -1,6 +1,12 @@
 .telegram_token
 .gemini_key
+.openrouter_key
+.anthropic_key
 bot/.telegram_token
 bot/.gemini_key
+bot/.openrouter_key
+bot/.anthropic_key
+bot/.*_key
+bot/.telegram_chat_id
 __pycache__/
 **/__pycache__/

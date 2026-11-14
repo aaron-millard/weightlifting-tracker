@@ -27,10 +27,10 @@
 
 ## 7. Numbered Action Command System
 Typing the single digit or the phrase triggers the action immediately:
+- [0] list actions (or 0 / actions): Displays the numbered action command menu.
 - [1] pull backlog (or 1): Displays current exploratory ideas and Telegram dumps from `memory/ProjectMemory.md`.
 - [2] pull staging (or 2): Displays concrete pending changes paused waiting for approval.
 - [3] execute staging (or 3): The official green light. Applies all staged changes across files and configs.
-- [4] sync all (or 4): Multi-level full sync (local files <-> cloud bot/Render <-> git remote <-> live dashboard).
+- [4] sync all (or 4): Multi-level full sync (local files <-> cloud bot/Render <-> git remote <-> live dashboard). Replies strictly with "Sync Complete."
 - [5] pull error log (or 5): Displays the top recurring mistakes and guardrails from `memory/ErrorLog.md`.
 - [6] status (or 6): Quick 3-bullet summary of project health, active files, and last sync timestamp.
-- [7] list actions (or 7): Displays the numbered action command menu.

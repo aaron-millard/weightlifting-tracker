@@ -596,7 +596,7 @@
     <section class="bw-banner">
       <div>
         <div class="bw-title">Bodyweight Trajectory</div>
-        <div class="bw-summary" id="bw-summary-text">Started at 175 lbs (July 7) &rarr; Peaked at 187 lbs (+12 lbs bulk) &rarr; Now at 182.6 lbs (-4.4 lbs from peak, +7.6 lbs net)</div>
+        <div class="bw-summary" id="bw-summary-text">Started at 175 lbs (July 7) &rarr; Peaked at 187 lbs (+12 lbs bulk) &rarr; Now at 181 lbs (-6 lbs from peak, +6 lbs net)</div>
       </div>
       <div class="bw-steps">
         <div class="bw-step" id="bw-step-july">
@@ -613,8 +613,8 @@
         <div class="arrow">&rarr;</div>
         <div class="bw-step highlight" id="bw-step-curr">
           <span>Nov 8 / Current</span>
-          <strong id="bw-curr-val">182.6 lbs</strong>
-          <small id="bw-curr-delta">-4.4 lbs from peak</small>
+          <strong id="bw-curr-val">181 lbs</strong>
+          <small id="bw-curr-delta">-6 lbs from peak</small>
         </div>
       </div>
     </section>
@@ -675,19 +675,19 @@
 
       <div class="two-col">
         <div class="info-card">
-          <h3>Current Rotation Schedule (11/6 – 11/16)</h3>
-          <ul class="exercise-list" style="padding: 0;">
-            <li><span class="ex-title">Fri 11/6</span><span class="ex-detail">Push 2 + Abs 1</span></li>
-            <li><span class="ex-title">Sat 11/7</span><span class="ex-detail">Pull + Stairclimber 12m</span></li>
-            <li><span class="ex-title">Sun 11/8</span><span class="ex-detail">Legs 1 + Abs 2</span></li>
-            <li><span class="ex-title">Mon 11/9</span><span class="ex-detail">Rest + Stairclimber 15m</span></li>
-            <li><span class="ex-title">Tue 11/10 (Today)</span><span class="ex-detail" style="color: var(--green); font-weight: 800;">Push 1 + Abs 1</span></li>
-            <li><span class="ex-title">Wed 11/11</span><span class="ex-detail">Pull + Stairclimber 12m</span></li>
-            <li><span class="ex-title">Thu 11/12</span><span class="ex-detail">Legs 2 (Hinge Trial) + Abs 2</span></li>
-            <li><span class="ex-title">Fri 11/13</span><span class="ex-detail">Rest + Stairclimber 15m</span></li>
-            <li><span class="ex-title">Sat 11/14</span><span class="ex-detail">Push 2 + Abs 1</span></li>
-            <li><span class="ex-title">Sun 11/15</span><span class="ex-detail">Pull + Stairclimber 12m</span></li>
-            <li><span class="ex-title">Mon 11/16</span><span class="ex-detail">Legs 1 + Abs 2</span></li>
+          <h3 id="rotation-schedule-title">Current Rotation Schedule (11/6 – 11/16)</h3>
+          <ul class="exercise-list" id="rotation-schedule-list" style="padding: 0;">
+            <li data-date="2026-11-06"><span class="ex-title">Fri 11/6</span><span class="ex-detail">Push 2 + Abs 1</span></li>
+            <li data-date="2026-11-07"><span class="ex-title">Sat 11/7</span><span class="ex-detail">Pull + Stairclimber 12m</span></li>
+            <li data-date="2026-11-08"><span class="ex-title">Sun 11/8</span><span class="ex-detail">Legs 1 + Abs 2</span></li>
+            <li data-date="2026-11-09"><span class="ex-title">Mon 11/9</span><span class="ex-detail">Rest + Stairclimber 15m</span></li>
+            <li data-date="2026-11-10"><span class="ex-title">Tue 11/10</span><span class="ex-detail">Push 1 + Abs 1</span></li>
+            <li data-date="2026-11-11"><span class="ex-title">Wed 11/11</span><span class="ex-detail">Pull + Stairclimber 12m</span></li>
+            <li data-date="2026-11-12"><span class="ex-title">Thu 11/12</span><span class="ex-detail">Legs 2 (Hinge Trial) + Abs 2</span></li>
+            <li data-date="2026-11-13"><span class="ex-title">Fri 11/13</span><span class="ex-detail">Rest + Stairclimber 15m</span></li>
+            <li data-date="2026-11-14"><span class="ex-title">Sat 11/14 (Today)</span><span class="ex-detail" style="color: var(--green); font-weight: 800;">Push 2 + Abs 1</span></li>
+            <li data-date="2026-11-15"><span class="ex-title">Sun 11/15</span><span class="ex-detail">Pull + Stairclimber 12m</span></li>
+            <li data-date="2026-11-16"><span class="ex-title">Mon 11/16</span><span class="ex-detail">Legs 1 + Abs 2</span></li>
           </ul>
         </div>
 
@@ -919,10 +919,10 @@
         july_2026_start: 175.0,
         peak_bulk: 187.0,
         nov_8_2026_start: 183.0,
-        current: 182.6
+        current: 181.0
       },
       exercises: [
-        { key: "bodyweight", name: "Bodyweight", julyVal: 175, julyText: "175 lbs (Peaked 187)", novVal: 183, currVal: 182.6, unit: "lbs", sets: "Started 175 lbs -> peaked 187 lbs -> currently 182.6 lbs (Morning weigh-in)", assisted: false, isBodyweight: true },
+        { key: "bodyweight", name: "Bodyweight", julyVal: 175, julyText: "175 lbs (Peaked 187)", novVal: 183, currVal: 181, unit: "lbs", sets: "Started 175 lbs -> peaked 187 lbs -> currently 181 lbs (Morning weigh-in)", assisted: false, isBodyweight: true },
         { key: "push_ups", name: "Push-Ups", julyVal: 8.5, julyText: "8.5 reps (7-10)", novVal: 25, currVal: 25, unit: "reps", sets: "1 set, 8x warmup / 25 max", assisted: false },
         { key: "dumbbell_press", name: "Dumbbell Press", julyVal: 40, novVal: 55, currVal: 55, unit: "lbs",
         repsNote: "4 sets, 6-10x reps (2-3m rest)", sets: "4 sets, 6-10x, 2-3m rest", assisted: false },
@@ -931,17 +931,17 @@
         { key: "incline_press", name: "Incline Press", julyVal: 30, novVal: 40, currVal: 40, unit: "lbs", sets: "3 sets, 6-10x, 2-3m rest", assisted: false },
         { key: "shoulder_press", name: "Shoulder Press", julyVal: 30, novVal: 40, currVal: 40, unit: "lbs",
         repsNote: "3 sets, 6-10x reps (2-3m rest)", sets: "3 sets, 6-10x, 2-3m rest", assisted: false },
-        { key: "lat_raise_machine", name: "Lat Raise Machine", julyVal: null, novVal: 70, currVal: 70, unit: "lbs", sets: "3 sets, 8-12x, 60-90s rest", assisted: false },
-        { key: "single_arm_cable_pushdown", name: "Single Arm Cable Pushdown", julyVal: null, novVal: 30, currVal: 30, unit: "lbs", sets: "3 sets, 8-12x, 45-60s Burnout", assisted: false },
+        { key: "lat_raise_machine", name: "Lat Raise Machine", julyVal: null, novVal: 70, currVal: 60, unit: "lbs", sets: "3 sets, 8-12x, 60-90s rest", assisted: false },
+        { key: "single_arm_cable_pushdown", name: "Single Arm Cable Pushdown", julyVal: null, novVal: 20, currVal: 20, unit: "lbs", sets: "4 sets, 8-12x, 45-60s Burnout", assisted: false },
         { key: "shoulder_lat_dumbbell_rotations", name: "Shoulder / Lat DB Rotations", julyVal: null, novVal: 14, currVal: 14, unit: "lbs", sets: "2 sets, 8-12x, 45-60s Burnout", assisted: false },
         { key: "pull_ups_assisted", name: "Assisted Pull-Ups", julyVal: 70, novVal: 45, currVal: 45, unit: "lbs assist",
         repsNote: "3 sets, 6-10x reps (2-3m rest)", sets: "3 sets, 6-10x, 2-3m rest (lower = stronger)", assisted: true },
         { key: "chin_ups_assisted", name: "Assisted Chin-Ups", julyVal: 50, novVal: 35, currVal: 35, unit: "lbs assist", sets: "3 sets, 6-10x, 2-3m rest (lower = stronger)", assisted: true },
-        { key: "seated_close_grip_vbar_row", name: "Seated Close-Grip (V-Bar) Row", julyVal: null, novVal: 115, currVal: 115, unit: "lbs", sets: "3 sets, 6-10x, 2m rest", assisted: false },
+        { key: "seated_close_grip_vbar_row", name: "Seated Close-Grip (V-Bar) Row", julyVal: null, novVal: 100, currVal: 100, unit: "lbs", sets: "3 sets, 6-10x, 2m rest", assisted: false },
         { key: "preacher_curls", name: "Preacher Curls", julyVal: null, novVal: 35, currVal: 35, unit: "lbs", sets: "3 sets, 6-10x, 90s rest", assisted: false },
-        { key: "rear_delt_machine", name: "Rear Delt Machine", julyVal: null, novVal: 70, currVal: 70, unit: "lbs", sets: "3 sets, 10-14x, 60-90s Burnout", assisted: false },
+        { key: "rear_delt_machine", name: "Rear Delt Machine", julyVal: null, novVal: 70, currVal: 75, unit: "lbs", sets: "3 sets, 10-14x, 60-90s Burnout", assisted: false },
         { key: "dumbbell_hammer_curls", name: "Dumbbell / Hammer Curls", julyVal: 22.5, julyText: "22.5 lbs (20-25)", novVal: 30, currVal: 30, unit: "lbs", sets: "5 sets, 8-12x, 90s Burnout", assisted: false },
-        { key: "leg_press", name: "Leg Press", julyVal: 150, novVal: 200, currVal: 200, unit: "lbs",
+        { key: "leg_press", name: "Leg Press", julyVal: 150, novVal: 200, currVal: 210, unit: "lbs",
         repsNote: "4 sets, 6-10x reps (2-3m rest)", sets: "4 sets, 6-10x, 2-3m rest", assisted: false },
         { key: "hack_squats", name: "Hack Squats", julyVal: 135, novVal: 155, currVal: 155, unit: "lbs",
         repsNote: "4 sets, 6-10x reps (2-3m rest)", sets: "4 sets, 6-10x, 2-3m rest", assisted: false },
@@ -951,11 +951,22 @@
         { key: "hip_abduction_push", name: "Hip Abduction (Push)", julyVal: null, novVal: 120, currVal: 120, unit: "lbs", sets: "4 sets, 15-20x, 45s rest", assisted: false },
         { key: "leg_extensions", name: "Leg Extensions", julyVal: 120, novVal: 140, currVal: 140, unit: "lbs", sets: "3 sets, 10-14x, 90s rest (Pins: B5/F2)", assisted: false },
         { key: "standing_calf", name: "Standing Calf", julyVal: null, novVal: 60, currVal: 60, unit: "lbs", sets: "4 sets, 15-20x, 60s rest", assisted: false },
-        { key: "decline_sit_ups", name: "Decline & Weighted Sit-Ups", julyVal: 0, julyText: "0 lbs (Bodyweight)", novVal: 15, currVal: 15, unit: "lbs", sets: "15 reps weighted", assisted: false },
+        { key: "decline_sit_ups", name: "Decline & Weighted Sit-Ups", julyVal: 0, julyText: "0 lbs (Bodyweight)", novVal: 10, currVal: 10, unit: "lbs", sets: "2 sets, 6-10x weighted", assisted: false },
         { key: "stairclimber_pull", name: "Stairclimber (Pull Day)", julyVal: 8, novVal: 12, currVal: 12, unit: "mins", sets: "Day 2 Pull: 12:00 at Level 4", assisted: false },
         { key: "stairclimber_rest", name: "Stairclimber (Rest Day)", julyVal: 8, novVal: 12, currVal: 15, unit: "mins", sets: "Day 4 Rest: 15:00 at Level 4 (+3m vs Nov 8)", assisted: false }
       ],
-      workout_logs: []
+      workout_logs: [
+        { date: "2026-11-09", exercise: "bodyweight", value: 182.6, unit: "lbs" },
+        { date: "2026-11-09", exercise: "stairclimber_rest", value: 15.0, unit: "minutes" },
+        { date: "2026-11-10", exercise: "lat_raise_machine", value: 60.0, unit: "lbs" },
+        { date: "2026-11-10", exercise: "single_arm_cable_pushdown", value: 20.0, unit: "lbs" },
+        { date: "2026-11-10", exercise: "decline_sit_ups", value: 10.0, unit: "lbs" },
+        { date: "2026-11-11", exercise: "seated_close_grip_vbar_row", value: 100.0, unit: "lbs" },
+        { date: "2026-11-11", exercise: "rear_delt_machine", value: 75.0, unit: "lbs" },
+        { date: "2026-11-12", exercise: "bodyweight", value: 182.2, unit: "lbs" },
+        { date: "2026-11-14", exercise: "leg_press", value: 210.0, unit: "lbs" },
+        { date: "2026-11-14", exercise: "bodyweight", value: 181.0, unit: "lbs" }
+      ]
     };
 
     const routines = {
@@ -964,8 +975,8 @@
         ["Dumbbell Press", "55 lb | 4 sets, 6-10x, 2-3m"],
         ["Assisted Dips", "15 lb assist | 3 sets, 6-8x, 2m"],
         ["Incline Press / Shoulder Press", "40 lb | 3 sets, 6-10x, 2-3m"],
-        ["Lat Raise Machine", "70 lb | 3 sets, 8-12x, 60-90s"],
-        ["Single Arm Cable Pushdown", "30 lb | 3 sets, 8-12x, 45-60s Burnout"],
+        ["Lat Raise Machine", "60 lb | 3 sets, 8-12x, 60-90s"],
+        ["Single Arm Cable Pushdown", "20 lb | 4 sets, 8-12x, 45-60s Burnout"],
         ["Shoulder / Lat DB Rotations", "14 lb | 2 sets, 8-12x, 45-60s Burnout"],
         ["Decline -> Perfect -> Incline Push-Ups", "2 rounds, no rest, 90s between rounds"]
       ],
@@ -973,16 +984,16 @@
         ["Warm-Up Assisted Pull-Up", "95 lb assist | 1 lightweight set"],
         ["Standard Assisted Pull-Ups", "45 lb assist | 3 sets, 6-10x, 2-3m"],
         ["Assisted Chin-Ups", "35 lb assist | 3 sets, 6-10x, 2-3m"],
-        ["Seated Close-Grip (V-Bar) Row", "115 lb | 3 sets, 6-10x, 2m"],
+        ["Seated Close-Grip (V-Bar) Row", "100 lb | 3 sets, 6-10x, 2m"],
         ["Preacher Curls", "35 lb | 3 sets, 6-10x, 90s"],
-        ["Rear Delt Machine", "70 lb | 3 sets, 10-14x, 60-90s Burnout"],
+        ["Rear Delt Machine", "75 lb | 3 sets, 10-14x, 60-90s Burnout"],
         ["Cable Curls", "Standard sets"],
         ["Dumbbell / Hammer Curls", "30 lb | 5 sets, 8-12x, 90s Burnout"],
         ["Stairclimber", "Level 4 | 12:00 mins (Pull Day Target)"]
       ],
       legs: [
         ["Lightweight Warm-Ups", "2 sets"],
-        ["Hack Squats / Leg Press", "155 lb / 200 lb | 4 sets, 6-10x, 2-3m"],
+        ["Hack Squats / Leg Press", "155 lb / 210 lb | 4 sets, 6-10x, 2-3m"],
         ["Bulgarian Split Squats", "15 lb | 3 sets, 6-8x, 2m"],
         ["Hip Thrust Machine", "10 lb | 3 sets, 8-12x, 60-90s"],
         ["Leg Curls (Pins: F2 / M1 / T4-5)", "75 lb | 3 sets, 10-14x, 90s"],
@@ -996,7 +1007,7 @@
       rest: [
         ["Stairclimber", "Level 4 | 15:00 mins (Rest Day Target)"],
         ["Abs 1 — Ab Wheel", "6 reps"],
-        ["Abs 1 — Decline Sit-Ups", "15 lb | 15 reps"],
+        ["Abs 1 — Decline Sit-Ups", "10 lb | 2 sets, 6-10x"],
         ["Abs 1 — Planks", "60s, 45s, 45s"],
         ["Abs 2 — Weighted Sit-Ups", "15 lb | 15 reps"],
         ["Abs 2 — Side Planks", "30s, 30s, 30s"],
@@ -1175,11 +1186,11 @@
       }
       if (item.isBodyweight) {
         if (mode === "july") {
-          const diff = currVal - baseVal;
+          const diff = Number((currVal - baseVal).toFixed(1));
           const sign = diff >= 0 ? "+" : "";
           return { text: `${sign}${diff} lbs (Peak 187)`, isBaseline: false, pct: 85 };
         } else {
-          const diff = currVal - baseVal;
+          const diff = Number((currVal - baseVal).toFixed(1));
           if (diff === 0) return { text: "183 lbs Baseline", isBaseline: true, pct: 65 };
           const sign = diff > 0 ? "+" : "";
           return { text: `${sign}${diff} lbs vs Nov 8`, isBaseline: false, pct: 80 };
@@ -1187,14 +1198,14 @@
       }
 
       if (item.assisted) {
-        const strengthGain = baseVal - currVal; // Lower assistance = more strength
+        const strengthGain = Number((baseVal - currVal).toFixed(1)); // Lower assistance = more strength
         if (strengthGain === 0) {
           return { text: mode === "nov" ? "Nov 8 Baseline Set" : "No change", isBaseline: true, pct: 60 };
         }
         const sign = strengthGain > 0 ? "+" : "";
         return { text: `${sign}${strengthGain} lbs strength`, isBaseline: false, pct: Math.min(95, Math.max(45, 65 + strengthGain)) };
       } else {
-        const diff = currVal - baseVal;
+        const diff = Number((currVal - baseVal).toFixed(1));
         if (diff === 0) {
           return { text: mode === "nov" ? "Nov 8 Baseline Set" : "Maintained", isBaseline: true, pct: 60 };
         }
@@ -1271,14 +1282,107 @@
     }
 
     // Render Routines & Backups
-    Object.keys(routines).forEach(key => {
-      const ul = document.getElementById(`routine-${key}`);
-      routines[key].forEach(([name, detail]) => {
-        const li = document.createElement("li");
-        li.innerHTML = `<span class="ex-title">${name}</span><span class="ex-detail">${detail}</span>`;
-        ul.appendChild(li);
+    function renderRoutines() {
+      Object.keys(routines).forEach(key => {
+        const ul = document.getElementById(`routine-${key}`);
+        if (!ul) return;
+        ul.innerHTML = "";
+        routines[key].forEach(([name, detail]) => {
+          const li = document.createElement("li");
+          li.innerHTML = `<span class="ex-title">${name}</span><span class="ex-detail">${detail}</span>`;
+          ul.appendChild(li);
+        });
       });
-    });
+    }
+    renderRoutines();
+
+    function updateBodyweightBanner(currBw) {
+      if (typeof currBw !== "number") return;
+      workoutData.bodyweight.current = currBw;
+      const bwItem = workoutData.exercises.find(e => e.key === "bodyweight");
+      if (bwItem) {
+        bwItem.currVal = currBw;
+        bwItem.sets = `Started 175 lbs -> peaked 187 lbs -> currently ${currBw} lbs (Morning weigh-in)`;
+      }
+      const diffPeak = Number((currBw - 187.0).toFixed(1));
+      const diffJuly = Number((currBw - 175.0).toFixed(1));
+      const signPeak = diffPeak > 0 ? "+" : "";
+      const signJuly = diffJuly >= 0 ? "+" : "";
+      const currValEl = document.getElementById("bw-curr-val");
+      const currDeltaEl = document.getElementById("bw-curr-delta");
+      const summaryEl = document.getElementById("bw-summary-text");
+      if (currValEl) currValEl.textContent = `${currBw} lbs`;
+      if (currDeltaEl) currDeltaEl.textContent = `${signPeak}${diffPeak} lbs from peak`;
+      if (summaryEl) {
+        summaryEl.innerHTML = `Started at 175 lbs (July 7) &rarr; Peaked at 187 lbs (+12 lbs bulk) &rarr; Now at ${currBw} lbs (${signPeak}${diffPeak} lbs from peak, ${signJuly}${diffJuly} lbs net)`;
+      }
+    }
+
+    function updateRotationScheduleHighlight() {
+      const ul = document.getElementById("rotation-schedule-list");
+      if (!ul) return;
+      const now = new Date();
+      const y = now.getFullYear();
+      const m = String(now.getMonth() + 1).padStart(2, "0");
+      const d = String(now.getDate()).padStart(2, "0");
+      const todayIso = `${y}-${m}-${d}`;
+
+      // 8-day repeating macro-cycle anchored on 2026-11-06 (Push 2)
+      const anchor = new Date(2026, 10, 6);
+      const cycleWorkouts = [
+        "Push 2 + Abs 1",
+        "Pull + Stairclimber 12m",
+        "Legs 1 + Abs 2",
+        "Rest + Stairclimber 15m",
+        "Push 1 + Abs 1",
+        "Pull + Stairclimber 12m",
+        "Legs 2 (Hinge Trial) + Abs 2",
+        "Rest + Stairclimber 15m"
+      ];
+      const dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+      // If today is past 2026-11-16, dynamically generate an 11-day window around today (-4 to +6 days)
+      if (todayIso > "2026-11-16") {
+        ul.innerHTML = "";
+        const startOff = -4;
+        const endOff = 6;
+        let firstLabel = "";
+        let lastLabel = "";
+        for (let off = startOff; off <= endOff; off++) {
+          const dt = new Date(now.getFullYear(), now.getMonth(), now.getDate() + off);
+          const diffDays = Math.round((dt - anchor) / 86400000);
+          const idx = ((diffDays % 8) + 8) % 8;
+          const ds = `${dt.getMonth() + 1}/${dt.getDate()}`;
+          if (off === startOff) firstLabel = ds;
+          if (off === endOff) lastLabel = ds;
+          const isToday = off === 0;
+          const li = document.createElement("li");
+          li.innerHTML = `<span class="ex-title">${dayNames[dt.getDay()]} ${ds}${isToday ? " (Today)" : ""}</span><span class="ex-detail"${isToday ? ' style="color: var(--green); font-weight: 800;"' : ""}>${cycleWorkouts[idx]}</span>`;
+          ul.appendChild(li);
+        }
+        const titleEl = document.getElementById("rotation-schedule-title");
+        if (titleEl) titleEl.textContent = `Current Rotation Schedule (${firstLabel} – ${lastLabel})`;
+        return;
+      }
+
+      ul.querySelectorAll("li[data-date]").forEach(li => {
+        const dtStr = li.getAttribute("data-date");
+        const titleSpan = li.querySelector(".ex-title");
+        const detailSpan = li.querySelector(".ex-detail");
+        if (!titleSpan || !detailSpan) return;
+        const baseTitle = titleSpan.textContent.replace(/\s*\(Today\)\s*$/, "");
+        if (dtStr === todayIso) {
+          titleSpan.textContent = `${baseTitle} (Today)`;
+          detailSpan.style.color = "var(--green)";
+          detailSpan.style.fontWeight = "800";
+        } else {
+          titleSpan.textContent = baseTitle;
+          detailSpan.style.color = "";
+          detailSpan.style.fontWeight = "";
+        }
+      });
+    }
+    updateRotationScheduleHighlight();
 
     const backupsContainer = document.getElementById("backups-container");
     backups.forEach(group => {
@@ -1305,11 +1409,23 @@
     // Fetch live cloud updates when hosted on Render (/lifting-data.json)
     async function syncLiveCloudData() {
       try {
+        let cloud = null;
         const res = await fetch("/weightlifting-tracker-data.json", { cache: "no-store" });
-        if (!res.ok) { const fallback = await fetch("/lifting-data.json"); if (fallback.ok) cloud = await fallback.json(); else return; } else { cloud = await res.json(); }
-        const cloud = await res.json();
+        if (res.ok) {
+          cloud = await res.json();
+        } else {
+          const fallback = await fetch("/lifting-data.json", { cache: "no-store" });
+          if (fallback.ok) cloud = await fallback.json();
+          else return;
+        }
+        if (!cloud) return;
+
+        const novMap = cloud.baselines_nov_8_2026 || {};
         const currMap = cloud.current_targets_and_maxes || {};
         workoutData.exercises.forEach(item => {
+          if (novMap[item.key] && typeof novMap[item.key].value === "number") {
+            item.novVal = novMap[item.key].value;
+          }
           if (currMap[item.key] && typeof currMap[item.key].value === "number") {
             item.currVal = currMap[item.key].value;
           }
@@ -1317,8 +1433,21 @@
         if (Array.isArray(cloud.workout_logs)) {
           workoutData.workout_logs = cloud.workout_logs;
         }
-        if (currMap.bodyweight && typeof currMap.bodyweight.value === "number") {
-          document.getElementById("bw-curr-val").textContent = `${currMap.bodyweight.value} lbs`;
+        const liveBw = (currMap.bodyweight && typeof currMap.bodyweight.value === "number")
+          ? currMap.bodyweight.value
+          : (cloud.bodyweight && typeof cloud.bodyweight.current === "number" ? cloud.bodyweight.current : null);
+        if (typeof liveBw === "number") {
+          updateBodyweightBanner(liveBw);
+        }
+        const ms = cloud.machine_settings || {};
+        if (ms.leg_curls) {
+          if (ms.leg_curls.front !== undefined) document.getElementById("pin-lc-front").textContent = ms.leg_curls.front;
+          if (ms.leg_curls.medium !== undefined) document.getElementById("pin-lc-med").textContent = ms.leg_curls.medium;
+          if (ms.leg_curls.top !== undefined) document.getElementById("pin-lc-top").textContent = ms.leg_curls.top;
+        }
+        if (ms.leg_extension) {
+          if (ms.leg_extension.back !== undefined) document.getElementById("pin-le-back").textContent = ms.leg_extension.back;
+          if (ms.leg_extension.front !== undefined) document.getElementById("pin-le-front").textContent = ms.leg_extension.front;
         }
         renderProgression();
       } catch (e) {

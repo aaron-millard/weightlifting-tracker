@@ -11,7 +11,10 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+import zlib
 from typing import Dict, List, Any, Tuple
+
+ALLOWED_CHAT_IDS = {8299631714, 8349556362, 12345678}
 
 SSL_CTX = ssl.create_default_context()
 SSL_UNVERIFIED_CTX = ssl._create_unverified_context()
@@ -128,9 +131,10 @@ def save_state_to_telegram_cloud(data: Dict[str, Any]):
         return
     try:
         raw_bytes = json.dumps(data, separators=(",", ":")).encode("utf-8")
-        b64_str = base64.b64encode(raw_bytes).decode("ascii")
+        comp_bytes = zlib.compress(raw_bytes, level=9)
+        b64_str = base64.b64encode(comp_bytes).decode("ascii")
         chunks = [b64_str[i : i + 240] for i in range(0, len(b64_str), 240)][:95]
-        commands = [{"command": f"s{idx}", "description": ch} for idx, ch in enumerate(chunks)]
+        commands = [{"command": f"s{idx}", "description": ch.ljust(3)} for idx, ch in enumerate(chunks)]
         res = tg_api(
             token,
             "setMyCommands",
@@ -148,25 +152,137 @@ def save_state_to_telegram_cloud(data: Dict[str, Any]):
         print(f"[lifting] Telegram cloud save FAILED: {e}", flush=True)
 
 
-def apply_cloud_state_to_workout_data(state: Dict[str, Any]):
-    w_data = load_workout_data()
+def _fmt_lb(val: Any) -> str:
+    try:
+        f = float(val)
+        return str(int(f)) if f.is_integer() else str(f)
+    except Exception:
+        return str(val)
+
+
+def sync_workout_data_dict(w_data: Dict[str, Any], state: Dict[str, Any]) -> bool:
     changed = False
+    curr_map = w_data.setdefault("current_targets_and_maxes", {})
+    nov_map = w_data.setdefault("baselines_nov_8_2026", {})
+
     for k, v in state.get("workout_updates", {}).items():
-        if w_data.get("current_targets_and_maxes", {}).get(k) != v:
-            w_data.setdefault("current_targets_and_maxes", {})[k] = v
+        if not isinstance(v, dict):
+            continue
+        existing = curr_map.get(k, {})
+        merged = dict(existing) if isinstance(existing, dict) else {}
+        merged.update(v)
+        # Preserve specific routine_sets on single_arm_cable_pushdown / decline_sit_ups if already customized
+        if k == "single_arm_cable_pushdown" and existing.get("routine_sets") == "4 sets, 8-12x, 45-60s Burnout":
+            merged["routine_sets"] = "4 sets, 8-12x, 45-60s Burnout"
+        if k == "decline_sit_ups" and existing.get("routine_sets") == "2 sets, 6-10x":
+            merged["routine_sets"] = "2 sets, 6-10x"
+        if curr_map.get(k) != merged:
+            curr_map[k] = merged
             changed = True
+
     for k, v in state.get("machine_updates", {}).items():
         if w_data.get("machine_settings", {}).get(k) != v:
             w_data.setdefault("machine_settings", {})[k] = v
             changed = True
+
     existing_logs = {json.dumps(x, sort_keys=True) for x in w_data.get("workout_logs", [])}
     for log_entry in state.get("workout_logs", []):
+        if not isinstance(log_entry, dict):
+            continue
         s_log = json.dumps(log_entry, sort_keys=True)
         if s_log not in existing_logs:
             w_data.setdefault("workout_logs", []).append(log_entry)
             existing_logs.add(s_log)
             changed = True
-    if changed:
+
+    # Apply baseline updates and bodyweight history from workout_logs
+    bw_obj = w_data.setdefault("bodyweight", {})
+    bw_hist = bw_obj.setdefault("history", [])
+    bw_dates = {h.get("date"): h for h in bw_hist if isinstance(h, dict) and h.get("date")}
+
+    for log_entry in w_data.get("workout_logs", []):
+        if not isinstance(log_entry, dict):
+            continue
+        ex = log_entry.get("exercise")
+        val = log_entry.get("value")
+        notes = str(log_entry.get("notes", ""))
+        l_date = log_entry.get("date")
+        if ex and isinstance(val, (int, float)) and "updated starting baseline" in notes.lower():
+            if ex in nov_map and nov_map[ex].get("value") != float(val):
+                nov_map[ex]["value"] = float(val)
+                changed = True
+        if ex == "bodyweight" and isinstance(val, (int, float)) and l_date:
+            f_val = float(val)
+            diff_peak = round(f_val - float(bw_obj.get("peak_bulk", 187.0)), 1)
+            diff_july = round(f_val - float(bw_obj.get("july_2026_start", 175.0)), 1)
+            note_str = f"Morning weigh-in ({diff_peak:+.1f} lbs from peak 187, {diff_july:+.1f} lbs from July start)"
+            if l_date not in bw_dates:
+                new_h = {"date": l_date, "weight": f_val, "notes": note_str}
+                bw_hist.append(new_h)
+                bw_dates[l_date] = new_h
+                changed = True
+            elif bw_dates[l_date].get("weight") != f_val:
+                bw_dates[l_date]["weight"] = f_val
+                bw_dates[l_date]["notes"] = note_str
+                changed = True
+
+    if "bodyweight" in curr_map and isinstance(curr_map["bodyweight"].get("value"), (int, float)):
+        curr_bw = float(curr_map["bodyweight"]["value"])
+        if bw_obj.get("current") != curr_bw:
+            bw_obj["current"] = curr_bw
+            changed = True
+
+    # Keep active_routines synchronized with current_targets_and_maxes
+    routines = w_data.get("active_routines", {})
+    name_to_key = {
+        "Dumbbell Press": ("dumbbell_press", " lb"),
+        "Dips (Assisted)": ("dips_assisted", " lb assist"),
+        "Incline Press / Shoulder Press": ("shoulder_press", " lb"),
+        "Lat Raise Machine": ("lat_raise_machine", " lb"),
+        "Single Arm Cable Pushdown": ("single_arm_cable_pushdown", " lb"),
+        "Shoulder / Lat Dumbbell Rotations": ("shoulder_lat_dumbbell_rotations", " lb"),
+        "Warm Up Pull-Up": ("pull_ups_assisted_warmup", " lb assist"),
+        "Standard Pull-Ups": ("pull_ups_assisted", " lb assist"),
+        "Chin-Ups": ("chin_ups_assisted", " lb assist"),
+        "Seated Close-Grip (V-Bar) Row": ("seated_close_grip_vbar_row", " lb"),
+        "Preacher Curls": ("preacher_curls", " lb"),
+        "Rear Delt Machine": ("rear_delt_machine", " lb"),
+        "Dumbbell / Hammer Curls": ("dumbbell_hammer_curls", " lb"),
+        "Bulgarian Split Squats": ("bulgarian_split_squats", " lb"),
+        "Hip Thrust Machine": ("hip_thrust_machine", " lb"),
+        "Leg Curls (Pins: F2 / M1 / T4-5)": ("leg_curls", " lb"),
+        "Hip Abduction (Push)": ("hip_abduction_push", " lb"),
+        "Leg Extensions (Pins: B5 / F2)": ("leg_extensions", " lb"),
+        "Standing Calf": ("standing_calf", " lb"),
+    }
+    for day_list in routines.values():
+        if not isinstance(day_list, list):
+            continue
+        for item in day_list:
+            if not isinstance(item, dict):
+                continue
+            nm = item.get("name", "")
+            if nm == "Hack Squats / Leg Press":
+                hs = _fmt_lb(curr_map.get("hack_squats", {}).get("value", 155))
+                lp = _fmt_lb(curr_map.get("leg_press", {}).get("value", 210))
+                w_str = f"{hs} lb / {lp} lb"
+                if item.get("weight") != w_str:
+                    item["weight"] = w_str
+                    changed = True
+            elif nm in name_to_key:
+                ex_k, suffix = name_to_key[nm]
+                if ex_k in curr_map and "value" in curr_map[ex_k]:
+                    w_str = f"{_fmt_lb(curr_map[ex_k]['value'])}{suffix}"
+                    if item.get("weight") != w_str:
+                        item["weight"] = w_str
+                        changed = True
+
+    return changed
+
+
+def apply_cloud_state_to_workout_data(state: Dict[str, Any]):
+    w_data = load_workout_data()
+    if sync_workout_data_dict(w_data, state):
         save_workout_data(w_data)
 
 
@@ -198,9 +314,14 @@ def sync_state_from_telegram_cloud() -> Dict[str, Any]:
                     [c for c in cmds if str(c.get("command", "")).startswith("s")],
                     key=lambda x: int(str(x["command"])[1:] or "0"),
                 )
-                b64_str = "".join(str(c.get("description", "")) for c in sorted_cmds)
+                b64_str = "".join(str(c.get("description", "")).strip() for c in sorted_cmds)
                 if b64_str:
-                    cloud_data = json.loads(base64.b64decode(b64_str.encode("ascii")).decode("utf-8"))
+                    raw = base64.b64decode(b64_str.encode("ascii"))
+                    try:
+                        raw = zlib.decompress(raw)
+                    except Exception:
+                        pass
+                    cloud_data = json.loads(raw.decode("utf-8"))
                     if isinstance(cloud_data, dict):
                         for k in ("notes", "rules", "workout_logs"):
                             existing = {json.dumps(x, sort_keys=True) for x in local_data.get(k, [])}
@@ -365,23 +486,14 @@ def ask_gemini(
         "You have full access to his entire Weightlifting Tracker repository (`rules/MasterRules.md`, `memory/ProjectMemory.md`, `memory/DecisionLog.md`, and `data/workout_data.json`).\n\n"
         "CRITICAL RULES (FOLLOW AT ALL TIMES):\n"
         "1. RULE #1 (SHORT AS HUMANLY POSSIBLE & NO ASTERISKS): Every response must be as short, direct, and scannable as humanly possible. Use dashes (`-`) for bullets, zero fluff, no intros/outros, and NEVER use markdown asterisks (`*` or `**`).\n"
-        "2. IDEA-DUMP VS. QUESTION RULE (TOP PRIORITY):
-"
-        "   - If Aaron includes or starts his message with 'Idea dump' (case-insensitive):
-"
-        "     Treat it strictly as an idea dump. You MUST reply strictly in this exact format:
-"
-        "     Okay.
-
-"
-        "     Update Summary:
-"
-        "     - [Ultra-concise 1-2 bullet summary of what was logged/updated in simplest possible format]
-"
-        "   - If Aaron does NOT say 'Idea dump':
-"
-        "     Treat the message normally as a question, routine lookup, equipment swap inquiry, or general gym conversation, and reply directly with a clear, helpful answer without the Roger Roger/Summary header.
-"
+        "2. IDEA-DUMP VS. QUESTION RULE (TOP PRIORITY):\n"
+        "   - If Aaron includes or starts his message with 'Idea dump' (case-insensitive):\n"
+        "     Treat it strictly as an idea dump. You MUST reply strictly in this exact format:\n"
+        "     Roger Roger.\n\n"
+        "     Update Summary:\n"
+        "     - [Ultra-concise 1-2 bullet summary of what was logged/updated in simplest possible format]\n"
+        "   - If Aaron does NOT say 'Idea dump':\n"
+        "     Treat the message normally as a question, routine lookup, equipment swap inquiry, or general gym conversation, and reply directly with a clear, helpful answer without the Roger Roger/Summary header.\n"
         "3. ASSISTED EXERCISE INVERSION: For assisted dips, assisted pull-ups, and assisted chin-ups, LOWER weight = MORE strength gained (e.g., 40 lb -> 15 lb assist = +25 lbs strength gained).\n"
         "4. DATABASE UPDATES: Whenever Aaron logs a new weight/rep update or machine setting, include a JSON block at the VERY END of your response inside ```json_update ... ``` formatted like:\n"
         "```json_update\n"
@@ -597,6 +709,9 @@ def process_update(token: str, upd: Dict[str, Any]):
     if "message" in upd:
         msg = upd["message"]
         cid = msg["chat"]["id"]
+        if cid not in ALLOWED_CHAT_IDS:
+            print(f"[lifting] Ignored unauthorized chat_id {cid}", flush=True)
+            return
         print(f"[lifting] Incoming message in chat {cid}", flush=True)
         if "photo" in msg:
             photo_list = msg["photo"]

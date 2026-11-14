@@ -6,7 +6,7 @@
     "july_2026_start": 175.0,
     "peak_bulk": 187.0,
     "nov_8_2026_start": 183.0,
-    "current": 182.6,
+    "current": 181.0,
     "unit": "lbs",
     "history": [
       {
@@ -28,6 +28,16 @@
         "date": "2026-11-09",
         "weight": 182.6,
         "notes": "Morning weigh-in (-4.4 lbs from peak 187, +7.6 lbs from July start)"
+      },
+      {
+        "date": "2026-11-12",
+        "weight": 182.2,
+        "notes": "Morning weigh-in (-4.8 lbs from peak 187, +7.2 lbs from July start)"
+      },
+      {
+        "date": "2026-11-14",
+        "weight": 181.0,
+        "notes": "Morning weigh-in (-6.0 lbs from peak 187, +6.0 lbs from July start)"
       }
     ]
   },
@@ -168,7 +178,7 @@
       "routine_sets": "3 sets, 8-12x, 60-90s"
     },
     "single_arm_cable_pushdown": {
-      "value": 30.0,
+      "value": 20.0,
       "unit": "lbs",
       "routine_sets": "3 sets, 8-12x, 45-60s Burnout"
     },
@@ -201,7 +211,7 @@
       "routine_sets": "3 sets, 6-10x, 2-3m"
     },
     "seated_close_grip_vbar_row": {
-      "value": 115.0,
+      "value": 100.0,
       "unit": "lbs",
       "routine_sets": "3 sets, 6-10x, 2m"
     },
@@ -266,7 +276,7 @@
       "routine_sets": "6x"
     },
     "decline_sit_ups": {
-      "value": 15.0,
+      "value": 10.0,
       "unit": "lbs",
       "routine_sets": "15x"
     },
@@ -380,7 +390,7 @@
       "routine_sets": "3 sets, 6-10x, 2-3m"
     },
     "seated_close_grip_vbar_row": {
-      "value": 115.0,
+      "value": 100.0,
       "unit": "lbs",
       "routine_sets": "3 sets, 6-10x, 2m"
     },
@@ -390,7 +400,7 @@
       "routine_sets": "3 sets, 6-10x, 90s"
     },
     "rear_delt_machine": {
-      "value": 70.0,
+      "value": 75.0,
       "unit": "lbs",
       "routine_sets": "3 sets, 10-14x, 60-90s Burnout"
     },
@@ -405,7 +415,7 @@
       "routine_sets": "4 sets, 6-10x, 2-3m"
     },
     "leg_press": {
-      "value": 200.0,
+      "value": 210.0,
       "unit": "lbs",
       "routine_sets": "4 sets, 6-10x, 2-3m"
     },
@@ -470,9 +480,9 @@
       "duration": "30m"
     },
     "bodyweight": {
-      "value": 182.6,
+      "value": 181.0,
       "unit": "lbs",
-      "notes": "Bodyweight logged on Nov 9, 2026"
+      "notes": "Bodyweight logged on Nov 14, 2026"
     },
     "stairclimber_pull": {
       "value": 12.0,
@@ -585,7 +595,7 @@
       },
       {
         "name": "Seated Close-Grip (V-Bar) Row",
-        "weight": "115 lb",
+        "weight": "100 lb",
         "reps": "6-10x",
         "sets": "3 sets",
         "rest": "2m"
@@ -599,7 +609,7 @@
       },
       {
         "name": "Rear Delt Machine",
-        "weight": "70 lb",
+        "weight": "75 lb",
         "reps": "10-14x",
         "sets": "3 sets",
         "rest": "60-90s Burnout"
@@ -636,7 +646,7 @@
       },
       {
         "name": "Hack Squats / Leg Press",
-        "weight": "155 lb / 200 lb",
+        "weight": "155 lb / 210 lb",
         "reps": "6-10x",
         "sets": "4 sets",
         "rest": "2-3m"
@@ -794,7 +804,7 @@
       "Walking Lunges: 20lb, 3 sets, 5-8x, 2m",
       "Calf Machine: 150lb",
       "Hip Abduction (Squeeze): 120lb, 2 sets, 15-20x, 60s",
-      "45? Hyperextension / Back Extension Bench: Bodyweight or 15-25 lb plate/DB (Hinge candidate)",
+      "45\u00b0 Hyperextension / Back Extension Bench: Bodyweight or 15-25 lb plate/DB (Hinge candidate)",
       "Seated Back Extension Machine: Pin-select machine (Hinge candidate)"
     ],
     "abs_and_stretches": [
@@ -835,6 +845,62 @@
       "unit": "minutes",
       "delta_from_baseline": "+7 mins vs July start, +3 mins vs Nov 8 start",
       "notes": "Split stairclimber tracking into Day 2 Pull (12m L4) and Day 4 Rest (15m L4)"
+    },
+    {
+      "date": "2026-11-10",
+      "exercise": "lat_raise_machine",
+      "value": 60.0,
+      "unit": "lbs",
+      "delta_from_baseline": "-10 lbs vs Nov 8 start"
+    },
+    {
+      "date": "2026-11-10",
+      "exercise": "single_arm_cable_pushdown",
+      "value": 20.0,
+      "unit": "lbs",
+      "notes": "Updated starting baseline to 20 lbs"
+    },
+    {
+      "date": "2026-11-10",
+      "exercise": "decline_sit_ups",
+      "value": 10.0,
+      "unit": "lbs",
+      "notes": "Updated starting baseline to 10 lbs"
+    },
+    {
+      "date": "2026-11-11",
+      "exercise": "seated_close_grip_vbar_row",
+      "value": 100.0,
+      "unit": "lbs",
+      "notes": "Updated starting baseline to 100 lbs"
+    },
+    {
+      "date": "2026-11-11",
+      "exercise": "rear_delt_machine",
+      "value": 75.0,
+      "unit": "lbs",
+      "delta_from_baseline": "+5 lbs vs Nov 8 start"
+    },
+    {
+      "date": "2026-11-12",
+      "exercise": "bodyweight",
+      "value": 182.2,
+      "unit": "lbs",
+      "delta_from_baseline": "+7.2 lbs"
+    },
+    {
+      "date": "2026-11-14",
+      "exercise": "leg_press",
+      "value": 210.0,
+      "unit": "lbs",
+      "delta_from_baseline": "+60 lbs"
+    },
+    {
+      "date": "2026-11-14",
+      "exercise": "bodyweight",
+      "value": 181.0,
+      "unit": "lbs",
+      "delta_from_baseline": "+6 lbs vs July start, -2 lbs vs Nov 8 start"
     }
   ],
   "schedule_rotation": {

@@ -1,19 +1,19 @@
 # Project Memory — Weightlifting Tracker
 
-Last Updated: 2026-11-08
+Last Updated: 2026-11-14
 
 ## 1. Overview & Purpose
 - Personal weightlifting tracker and gym assistant for Aaron Millard.
 - Tracks progression across two baseline views:
   1. Starting July 7, 2026 (`2026-07-07`): Initial gym start date (4-month historical progression).
   2. Starting November 8, 2026 (`2026-11-08`): Official live tracking start date.
-- Bodyweight Progression: Started at 175 lbs (July 7, 2026) -> got up to 187 lbs peak -> 183 lbs on Nov 8 (official tracking start) -> currently 182.6 lbs (Nov 9 weigh-in, -4.4 lbs from peak, +7.6 lbs from start).
+- Bodyweight Progression: Started at 175 lbs (July 7, 2026) -> got up to 187 lbs peak -> 183 lbs on Nov 8 (official tracking start) -> 182.6 lbs (Nov 9) -> 182.2 lbs (Nov 12) -> currently 181.0 lbs (Nov 14 morning weigh-in, -6.0 lbs from peak, +6.0 lbs from July start, -2.0 lbs vs Nov 8 start).
 - Stairclimber Progression Split:
   - Day 2 (Pull Day): `12:00 mins` at Level 4.
   - Day 4 (Rest / Active Recovery Day): `15:00 mins` at Level 4 (+3 mins vs Nov 8 start, +7 mins vs July start).
 - Idea-Dump Rule Updated: Telegram bot replies `Roger Roger.` followed by `Update Summary:` in the simplest possible format. Never outputs raw JSON update blocks to user. Agent granted standing permission to update MasterRules dynamically.
 - Strict Project Boundary: This chat and workspace are strictly dedicated to `weightlifting-tracker` only. No cross-project context or references.
-- Live 24/7 Cloud Dashboard: `https://macrodave.onrender.com/lifting` (with live JSON data endpoint `https://macrodave.onrender.com/lifting-data.json`) so the dashboard is always accessible even when the PC is closed, and automatically reflects any workouts logged via `@WeightliftingTracker_Bot`.
+- Live 24/7 Cloud Dashboard: `https://macrodave.onrender.com/weightlifting-tracker` (with live JSON data endpoint `https://macrodave.onrender.com/weightlifting-tracker-data.json`) so the dashboard is always accessible even when the PC is closed, and automatically reflects any workouts logged via `@WeightliftingTracker_Bot`.
 - Follows the exact same architecture, communication rules (ultra-short, zero fluff, no markdown asterisks), `Roger Roger.` Idea-Dump Mode, and 24/7 Render multi-bot hosting methodology as `diet-macro-assistant` and `hunting-wabbits`.
 
 ## 2. Key Progression Highlights (July 2026 Baseline -> Nov 2026 Current)
@@ -22,15 +22,20 @@ Last Updated: 2026-11-08
 - Assisted Dips: 40 lbs assist -> 15 lbs assist (+25 lbs real strength gained)
 - Incline Press: 30 lbs -> 40 lbs (+10 lbs)
 - Shoulder Press: 30 lbs -> 40 lbs (+10 lbs)
+- Lat Raise Machine: 70 lbs (Nov 8) -> 60 lbs (Nov 10 adjustment)
+- Single Arm Cable Pushdown: 20 lbs baseline (4 sets, 8-12x, 45-60s Burnout)
 - Assisted Pull-Ups: 70 lbs assist -> 45 lbs assist (+25 lbs real strength gained)
 - Assisted Chin-Ups: 50 lbs assist -> 35 lbs assist (+15 lbs real strength gained)
+- Seated Close-Grip (V-Bar) Row: 100 lbs starting baseline (3 sets, 6-10x, 2m)
+- Rear Delt Machine: 70 lbs (Nov 8) -> 75 lbs (+5 lbs vs Nov 8 start)
 - Dumbbell / Hammer Curls: 22.5 lbs -> 30 lbs (+7.5 lbs)
 - Hack Squats: 135 lbs -> 155 lbs (+20 lbs)
-- Leg Press: 150 lbs -> 200 lbs (+50 lbs)
+- Leg Press: 150 lbs (July) -> 200 lbs (Nov 8) -> 210 lbs (+60 lbs vs July, +10 lbs vs Nov 8)
 - Leg Curls: 60 lbs -> 75 lbs (+15 lbs)
 - Leg Extensions: 120 lbs -> 140 lbs (+20 lbs)
-- Decline Sit-Ups / Sit-Ups: 0 lbs -> 15 lbs weighted (+15 lbs)
-- Stairclimber: Level 4 for 8 mins -> Level 4 for 12 mins (+4 mins)
+- Decline Sit-Ups: 0 lbs (July) -> 10 lbs weighted (2 sets, 6-10x)
+- Weighted Sit-Ups (Abs 2): 15 lbs (15x)
+- Stairclimber: Level 4 for 8 mins -> Level 4 for 12 mins (Pull Day) / 15 mins (Rest Day)
 
 ## 3. Machine Settings
 - Leg Curls: Front 2 | Medium 1 | Top 4-5
@@ -81,6 +86,6 @@ Last Updated: 2026-11-08
 ## 8. Master Standardization & Architecture (Weekend Review Ready)
 - Single Definitive Source of Truth: `data/workout_data.json` is the sole canonical database for routine split, weights, rep targets, pin settings, and history.
 - Offline Dashboard Sync: `dashboard.html` fetches `/weightlifting-tracker-data.json` when served, with embedded fallback for local `file://` inspection.
-- Numbered Action Command System: Enabled via `.agents/rules/workspace.md` and `rules/MasterRules.md` ([1] to [7]).
+- Numbered Action Command System: Enabled via `.agents/rules/workspace.md` and `rules/MasterRules.md` ([0] to [6]).
 - Archive Directory (`archive/`): Contains superseded pre-cleanup datasets, historical snapshots, and redundant requirement files moved out of the active working tree.
 - Two-Beat Confirmation Protocol: All pending code/file modifications stage in Staging until explicit approval via "go", "execute", or "3".
