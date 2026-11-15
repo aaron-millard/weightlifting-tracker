@@ -14,7 +14,7 @@
 
 ## RULE #3: STRICT PROJECT BOUNDARY (WEIGHTLIFTING TRACKER ONLY)
 - Unless Aaron explicitly instructs otherwise, this conversation, workspace, and project must focus exclusively on the `weightlifting-tracker` project.
-- Do not reference, surface, or bleed context from other projects (such as `hunting-wabbits`, `diet-macro-assistant`, etc.) in responses or working memory. Keep all discussions, tools, files, and rules strictly scoped to weightlifting, gym workouts, routine splits, progression metrics, and the IronBot/Weightlifting Tracker agent.
+- Do not reference, surface, or bleed context from other projects (such as `executive-assistant`, `diet-macro-assistant`, etc.) in responses or working memory. Keep all discussions, tools, files, and rules strictly scoped to weightlifting, gym workouts, routine splits, progression metrics, and the IronBot/Weightlifting Tracker agent.
 
 ## 4. Mandatory Pre-Response & Memory Protocol
 1. Always Check First: Before answering, check `rules/MasterRules.md`, `memory/ProjectMemory.md`, `memory/DecisionLog.md`, and `data/workout_data.json`.

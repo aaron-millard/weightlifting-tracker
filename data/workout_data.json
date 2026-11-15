@@ -395,12 +395,13 @@
       "routine_sets": "3 sets, 6-10x, 2m"
     },
     "preacher_curls": {
-      "value": 35.0,
+      "value": 40.0,
       "unit": "lbs",
-      "routine_sets": "3 sets, 6-10x, 90s"
+      "routine_sets": "3 sets, 6-10x, 90s",
+      "notes": "Curved bar preacher curls"
     },
     "rear_delt_machine": {
-      "value": 75.0,
+      "value": 80.0,
       "unit": "lbs",
       "routine_sets": "3 sets, 10-14x, 60-90s Burnout"
     },
@@ -485,20 +486,44 @@
       "notes": "Bodyweight logged on Nov 14, 2026"
     },
     "stairclimber_pull": {
-      "value": 12.0,
+      "value": 15.5,
       "level": 4,
-      "duration": "12:00",
+      "duration": "15:30",
       "unit": "minutes",
       "routine_sets": "Day 2 Pull",
       "notes": "12 mins at Level 4 on Pull Day"
     },
     "stairclimber_rest": {
-      "value": 15.0,
+      "value": 15.5,
       "level": 4,
-      "duration": "15:00",
+      "duration": "15:30",
       "unit": "minutes",
       "routine_sets": "Day 4 Rest",
       "notes": "15 mins at Level 4 on Rest Day (+3 mins vs Nov 8 start)"
+    },
+    "baselines_july_2026": {
+      "pull_ups_assisted": {
+        "value": 65.0,
+        "unit": "lbs",
+        "assisted": true
+      },
+      "chin_ups_assisted": {
+        "value": 65.0,
+        "unit": "lbs",
+        "assisted": true
+      }
+    },
+    "current_targets_and_maxes": {
+      "pull_ups_assisted": {
+        "value": 45.0,
+        "unit": "lbs",
+        "assisted": true
+      },
+      "chin_ups_assisted": {
+        "value": 45.0,
+        "unit": "lbs",
+        "assisted": true
+      }
     }
   },
   "machine_settings": {
@@ -602,14 +627,14 @@
       },
       {
         "name": "Preacher Curls",
-        "weight": "35 lb",
+        "weight": "40 lb",
         "reps": "6-10x",
         "sets": "3 sets",
         "rest": "90s"
       },
       {
         "name": "Rear Delt Machine",
-        "weight": "75 lb",
+        "weight": "80 lb",
         "reps": "10-14x",
         "sets": "3 sets",
         "rest": "60-90s Burnout"
@@ -901,6 +926,41 @@
       "value": 181.0,
       "unit": "lbs",
       "delta_from_baseline": "+6 lbs vs July start, -2 lbs vs Nov 8 start"
+    },
+    {
+      "date": "2026-11-15",
+      "exercise": "pull_and_chin_ups",
+      "value": 45.0,
+      "unit": "lbs assist",
+      "delta_from_baseline": "+20 lbs strength gained"
+    },
+    {
+      "date": "2026-11-15",
+      "exercise": "preacher_curls",
+      "value": 40.0,
+      "unit": "lbs",
+      "delta_from_baseline": "+5 lbs vs Nov 8 start"
+    },
+    {
+      "date": "2026-11-15",
+      "exercise": "rear_delt_machine",
+      "value": 80.0,
+      "unit": "lbs",
+      "delta_from_baseline": "+10 lbs vs Nov 8 start"
+    },
+    {
+      "date": "2026-11-15",
+      "exercise": "stairclimber_pull",
+      "value": 15.0,
+      "unit": "minutes",
+      "delta_from_baseline": "+3 mins"
+    },
+    {
+      "date": "2026-11-15",
+      "exercise": "stairclimber",
+      "value": 15.5,
+      "unit": "minutes",
+      "delta_from_baseline": "+3.5 mins vs Nov 8 start"
     }
   ],
   "schedule_rotation": {

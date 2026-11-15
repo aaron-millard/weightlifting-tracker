@@ -1,6 +1,6 @@
 # Technical Blueprint & Architecture Summary (Reusable Project Template)
 
-This document captures the full stack, architecture, and design patterns used in Diet & Macro Assistant and Hunting Wabbits so any new project can be spun up using the exact same methodology.
+This document captures the full stack, architecture, and design patterns used in Diet & Macro Assistant and Executive Assistant so any new project can be spun up using the exact same methodology.
 
 ---
 

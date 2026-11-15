@@ -14,7 +14,7 @@ Last Updated: 2026-11-14
 - Idea-Dump Rule Updated: Telegram bot replies `Roger Roger.` followed by `Update Summary:` in the simplest possible format. Never outputs raw JSON update blocks to user. Agent granted standing permission to update MasterRules dynamically.
 - Strict Project Boundary: This chat and workspace are strictly dedicated to `weightlifting-tracker` only. No cross-project context or references.
 - Live 24/7 Cloud Dashboard: `https://macrodave.onrender.com/weightlifting-tracker` (with live JSON data endpoint `https://macrodave.onrender.com/weightlifting-tracker-data.json`) so the dashboard is always accessible even when the PC is closed, and automatically reflects any workouts logged via `@WeightliftingTracker_Bot`.
-- Follows the exact same architecture, communication rules (ultra-short, zero fluff, no markdown asterisks), `Roger Roger.` Idea-Dump Mode, and 24/7 Render multi-bot hosting methodology as `diet-macro-assistant` and `hunting-wabbits`.
+- Follows the exact same architecture, communication rules (ultra-short, zero fluff, no markdown asterisks), `Roger Roger.` Idea-Dump Mode, and 24/7 Render multi-bot hosting methodology as `diet-macro-assistant` and `executive-assistant`.
 
 ## 2. Key Progression Highlights (July 2026 Baseline -> Nov 2026 Current)
 - Push-Ups: 8.5 reps (7-10) -> 25 reps (+16.5 reps)

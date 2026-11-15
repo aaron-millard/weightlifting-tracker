@@ -33,7 +33,7 @@
       "routine_sets": "3 sets, 6-10x, 2m"
     },
     "rear_delt_machine": {
-      "value": 75.0,
+      "value": 80.0,
       "unit": "lbs",
       "routine_sets": "3 sets, 10-14x, 60-90s Burnout"
     },
@@ -41,6 +41,50 @@
       "value": 210.0,
       "unit": "lbs",
       "routine_sets": "4 sets, 6-10x, 2-3m"
+    },
+    "baselines_july_2026": {
+      "pull_ups_assisted": {
+        "value": 65.0,
+        "unit": "lbs",
+        "assisted": true
+      },
+      "chin_ups_assisted": {
+        "value": 65.0,
+        "unit": "lbs",
+        "assisted": true
+      }
+    },
+    "current_targets_and_maxes": {
+      "pull_ups_assisted": {
+        "value": 45.0,
+        "unit": "lbs",
+        "assisted": true
+      },
+      "chin_ups_assisted": {
+        "value": 45.0,
+        "unit": "lbs",
+        "assisted": true
+      }
+    },
+    "preacher_curls": {
+      "value": 40.0,
+      "unit": "lbs",
+      "routine_sets": "3 sets, 6-10x, 90s",
+      "notes": "Curved bar preacher curls"
+    },
+    "stairclimber_pull": {
+      "value": 15.5,
+      "level": 4,
+      "duration": "15:30",
+      "unit": "minutes",
+      "routine_sets": "Day 2 Pull"
+    },
+    "stairclimber_rest": {
+      "value": 15.5,
+      "level": 4,
+      "duration": "15:30",
+      "unit": "minutes",
+      "routine_sets": "Day 4 Rest"
     }
   },
   "machine_updates": {},
@@ -107,6 +151,41 @@
       "value": 181.0,
       "unit": "lbs",
       "delta_from_baseline": "+6 lbs vs July start, -2 lbs vs Nov 8 start"
+    },
+    {
+      "date": "2026-11-15",
+      "exercise": "pull_and_chin_ups",
+      "value": 45.0,
+      "unit": "lbs assist",
+      "delta_from_baseline": "+20 lbs strength gained"
+    },
+    {
+      "date": "2026-11-15",
+      "exercise": "preacher_curls",
+      "value": 40.0,
+      "unit": "lbs",
+      "delta_from_baseline": "+5 lbs vs Nov 8 start"
+    },
+    {
+      "date": "2026-11-15",
+      "exercise": "rear_delt_machine",
+      "value": 80.0,
+      "unit": "lbs",
+      "delta_from_baseline": "+10 lbs vs Nov 8 start"
+    },
+    {
+      "date": "2026-11-15",
+      "exercise": "stairclimber_pull",
+      "value": 15.0,
+      "unit": "minutes",
+      "delta_from_baseline": "+3 mins"
+    },
+    {
+      "date": "2026-11-15",
+      "exercise": "stairclimber",
+      "value": 15.5,
+      "unit": "minutes",
+      "delta_from_baseline": "+3.5 mins vs Nov 8 start"
     }
   ]
 }

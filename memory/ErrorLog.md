@@ -32,7 +32,7 @@ This document is the permanent, continuous log of user corrections, agent errors
 ### 2026-11-09 — Cross-Project Context Bleed
 - **Timestamp:** 2026-11-09 07:56
 - **What Went Wrong & What Aaron Said:**
-  - During early initialization and setup, the agent referenced files and architectures from sibling projects (`hunting-wabbits`, `diet-macro-assistant`).
+  - During early initialization and setup, the agent referenced files and architectures from sibling projects (`executive-assistant`, `diet-macro-assistant`).
   - Aaron firmly instructed: *"Unless I ever say otherwise, this chat and project should always stick to our weight-lifting-tracker project and not the other projects I have in my git or my files."*
 - **Root Cause:** Over-reliance on cross-project blueprints during initial repo templating without setting a strict boundary rule.
 - **Current Status:** **Resolved**. Codified Rule #3 (*Strict Project Boundary: Weightlifting Tracker Only*) in `MasterRules.md` and `ProjectMemory.md`.
